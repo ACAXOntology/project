@@ -128,6 +128,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/ACAXO#AbortionAgainstFetalRights">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ACAXO#ProLife"/>
+        <rdfs:comment>A class representing a pro-life stance, supporting the banning of abortion within the context of it being a violation of the rights of the fetus.</rdfs:comment>
     </owl:Class>
     
 
@@ -142,6 +143,7 @@
                 <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ACAXO#BodyChoice"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>A class representing a pro-choice stance, supporting the right to abortion within the context of it being a personal bodily choice.</rdfs:comment>
     </owl:Class>
     
 
@@ -156,6 +158,7 @@
                 <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ACAXO#EconomicEquality"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>A class representing a pro-choice stance, supporting the right to abortion within the context of it being a requirement for women economic equality.</rdfs:comment>
     </owl:Class>
     
 
@@ -170,6 +173,7 @@
                 <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ACAXO#Healthcare"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>A class representing a pro-choice stance, supporting the right to abortion within the context of it being a form of healthcare for women.</rdfs:comment>
     </owl:Class>
     
 
@@ -184,6 +188,7 @@
                 <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ACAXO#Murder"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>A class representing a pro-life stance, supporting the banning of abortion within the rhetoric of it being a form of murder.</rdfs:comment>
     </owl:Class>
     
 
@@ -198,6 +203,7 @@
                 <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ACAXO#Sin"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>A class representing a pro-life stance, supporting the banning of abortion within the context of it being a religious sin.</rdfs:comment>
     </owl:Class>
     
 
@@ -212,6 +218,7 @@
                 <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ACAXO#AbortionForWomenEquality"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>&quot;A class representing a pro-choice stance, supporting the right to abortion within the context of it being a requirement for women equality.</rdfs:comment>
     </owl:Class>
     
 
@@ -291,7 +298,9 @@
 
     <!-- http://www.semanticweb.org/ACAXO#NewsEvent -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ACAXO#NewsEvent"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ACAXO#NewsEvent">
+        <rdfs:comment>A literal that represents the name of a specific news event</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -316,6 +325,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/ACAXO#ProChoice">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut"/>
+        <rdfs:comment>A class representing a pro-choice stance, reflected in cuts that express opinions, arguments, or narratives supportive of right to abortion.</rdfs:comment>
     </owl:Class>
     
 
@@ -324,6 +334,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/ACAXO#ProLife">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut"/>
+        <rdfs:comment>A class representing a pro-life stance, reflected in cuts that express opinions, arguments, or narratives supportive of banning abortion.</rdfs:comment>
     </owl:Class>
     
 
