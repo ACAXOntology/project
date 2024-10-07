@@ -450,6 +450,7 @@
     <!-- http://www.semanticweb.org/ACAXO#TXUserInfo -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ACAXO#TXUserInfo">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background"/>
         <rdfs:comment>Parameters which can be extracted from users&apos; textual content regarding their positionality</rdfs:comment>
     </owl:Class>
     
