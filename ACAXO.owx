@@ -16,7 +16,7 @@
     <Prefix name="schema" IRI="https://w3id.org/framester/schema/"/>
     <Import>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl</Import>
     <Declaration>
-        <Class IRI="#AbortionAgainstFetalRights"/>
+        <Class IRI="#AbortionAgainstLife"/>
     </Declaration>
     <Declaration>
         <Class IRI="#AbortionAsBodyChoice"/>
@@ -28,13 +28,22 @@
         <Class IRI="#AbortionAsHealthcare"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#AbortionAsMorallyWrong"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#AbortionAsMurder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AbortionAsRight"/>
     </Declaration>
     <Declaration>
         <Class IRI="#AbortionAsSin"/>
     </Declaration>
     <Declaration>
         <Class IRI="#AbortionForWomenEquality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AgainstLife"/>
     </Declaration>
     <Declaration>
         <Class IRI="#BodyChoice"/>
@@ -55,9 +64,6 @@
         <Class IRI="#Female"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#FetalRights"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Gender"/>
     </Declaration>
     <Declaration>
@@ -73,10 +79,10 @@
         <Class IRI="#Male"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Murder"/>
+        <Class IRI="#MorallyWrong"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Negative"/>
+        <Class IRI="#Murder"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Neutral"/>
@@ -91,19 +97,22 @@
         <Class IRI="#PoliticalLeaning"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Positive"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#ProChoice"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ProLife"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#ProtectTheUnborn"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Religious"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ReligiousBelief"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Right"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Sin"/>
@@ -118,13 +127,13 @@
         <Class IRI="#TXPost"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#TXTag"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#TXUser"/>
     </Declaration>
     <Declaration>
         <Class IRI="#TXUserInfo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TheUnborn"/>
     </Declaration>
     <Declaration>
         <Class IRI="#WomenEquality"/>
@@ -154,13 +163,52 @@
         <DataProperty IRI="#hasText"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#AbortionAgainstLife"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AbortionAsBodyChoice"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AbortionAsEconomicEquality"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AbortionAsHealthcare"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AbortionAsMorallyWrong"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AbortionAsMurder"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AbortionAsRight"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AbortionAsSin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AbortionForWomenEquality"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AgainstLife"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BodyChoice"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#CollegeOrHigher"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Conservative"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#EconomicEquality"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Female"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Healthcare"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#HighschoolOrLower"/>
@@ -172,10 +220,40 @@
         <NamedIndividual IRI="#Male"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#MorallyWrong"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Murder"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Neutral"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#NonReligious"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#ProChoice"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ProLife"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ProtectTheUnborn"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Religious"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Right"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TheUnborn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WomenEquality"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut"/>
@@ -185,7 +263,7 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#AbortionAgainstFetalRights"/>
+        <Class IRI="#AbortionAgainstLife"/>
         <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut"/>
     </SubClassOf>
     <SubClassOf>
@@ -222,8 +300,12 @@
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#AbortionAsMorallyWrong"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#AbortionAsMurder"/>
-        <Class IRI="#AbortionAgainstFetalRights"/>
+        <Class IRI="#AbortionAgainstLife"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#AbortionAsMurder"/>
@@ -233,8 +315,12 @@
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#AbortionAsSin"/>
+        <Class IRI="#AbortionAsRight"/>
         <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AbortionAsSin"/>
+        <Class IRI="#AbortionAsMorallyWrong"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#AbortionAsSin"/>
@@ -253,6 +339,10 @@
             <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#shotThrough"/>
             <Class IRI="#AbortionForWomenEquality"/>
         </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AgainstLife"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#BodyChoice"/>
@@ -279,10 +369,6 @@
         <Class IRI="#Gender"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#FetalRights"/>
-        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Gender"/>
         <Class IRI="#TXUserInfo"/>
     </SubClassOf>
@@ -303,12 +389,12 @@
         <Class IRI="#Gender"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Murder"/>
-        <Class IRI="#FetalRights"/>
+        <Class IRI="#MorallyWrong"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Negative"/>
-        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude"/>
+        <Class IRI="#Murder"/>
+        <Class IRI="#AgainstLife"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Neutral"/>
@@ -323,16 +409,16 @@
         <Class IRI="#TXUserInfo"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Positive"/>
+        <Class IRI="#ProChoice"/>
         <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#ProChoice"/>
-        <Class IRI="http://webprotege.stanford.edu/R94lPWVZXsvzCC1IamEsYjd"/>
+        <Class IRI="#ProLife"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#ProLife"/>
-        <Class IRI="http://webprotege.stanford.edu/R94lPWVZXsvzCC1IamEsYjd"/>
+        <Class IRI="#ProtectTheUnborn"/>
+        <Class IRI="#ReligiousBelief"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Religious"/>
@@ -343,8 +429,12 @@
         <Class IRI="#TXUserInfo"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Sin"/>
+        <Class IRI="#Right"/>
         <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sin"/>
+        <Class IRI="#MorallyWrong"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#TXAction"/>
@@ -387,24 +477,6 @@
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#TXPost"/>
-        <ObjectMinCardinality cardinality="0">
-            <ObjectProperty IRI="#contains"/>
-            <Class IRI="#TXTag"/>
-        </ObjectMinCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#TXTag"/>
-        <Class IRI="#TXAction"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#TXTag"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="#cites"/>
-            <Class IRI="#TXUser"/>
-        </ObjectExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#TXUser"/>
         <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
     </SubClassOf>
@@ -420,9 +492,137 @@
         <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Background"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#TheUnborn"/>
+        <Class IRI="#AgainstLife"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#WomenEquality"/>
         <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens"/>
     </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut"/>
+        <NamedIndividual IRI="#AbortionAgainstLife"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut"/>
+        <NamedIndividual IRI="#AbortionAsBodyChoice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AbortionForWomenEquality"/>
+        <NamedIndividual IRI="#AbortionAsEconomicEquality"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AbortionForWomenEquality"/>
+        <NamedIndividual IRI="#AbortionAsHealthcare"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut"/>
+        <NamedIndividual IRI="#AbortionAsMorallyWrong"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AbortionAgainstLife"/>
+        <NamedIndividual IRI="#AbortionAsMurder"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut"/>
+        <NamedIndividual IRI="#AbortionAsRight"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AbortionAsMorallyWrong"/>
+        <NamedIndividual IRI="#AbortionAsSin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut"/>
+        <NamedIndividual IRI="#AbortionForWomenEquality"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens"/>
+        <NamedIndividual IRI="#AgainstLife"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens"/>
+        <NamedIndividual IRI="#BodyChoice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Education"/>
+        <NamedIndividual IRI="#CollegeOrHigher"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PoliticalLeaning"/>
+        <NamedIndividual IRI="#Conservative"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WomenEquality"/>
+        <NamedIndividual IRI="#EconomicEquality"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gender"/>
+        <NamedIndividual IRI="#Female"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WomenEquality"/>
+        <NamedIndividual IRI="#Healthcare"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Education"/>
+        <NamedIndividual IRI="#HighschoolOrLower"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PoliticalLeaning"/>
+        <NamedIndividual IRI="#Liberal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gender"/>
+        <NamedIndividual IRI="#Male"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens"/>
+        <NamedIndividual IRI="#MorallyWrong"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AgainstLife"/>
+        <NamedIndividual IRI="#Murder"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude"/>
+        <NamedIndividual IRI="#Neutral"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ReligiousBelief"/>
+        <NamedIndividual IRI="#NonReligious"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude"/>
+        <NamedIndividual IRI="#ProChoice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Attitude"/>
+        <NamedIndividual IRI="#ProLife"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AbortionAgainstLife"/>
+        <NamedIndividual IRI="#ProtectTheUnborn"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Religious"/>
+        <NamedIndividual IRI="#Religious"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens"/>
+        <NamedIndividual IRI="#Right"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MorallyWrong"/>
+        <NamedIndividual IRI="#Sin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AgainstLife"/>
+        <NamedIndividual IRI="#TheUnborn"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens"/>
+        <NamedIndividual IRI="#WomenEquality"/>
+    </ClassAssertion>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isAboutNews"/>
         <Class IRI="#TXAction"/>
@@ -469,7 +669,7 @@
     </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#AbortionAgainstFetalRights</IRI>
+        <IRI>#AbortionAgainstLife</IRI>
         <Literal>A class representing a pro-life stance, supporting the banning of abortion within the context of it being a violation of the rights of the fetus.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -551,6 +751,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#TXUserInfo</IRI>
         <Literal>Parameters which can be extracted from users&apos; textual content regarding their positionality</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TheUnborn</IRI>
+        <Literal>May He listen to our prayer</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
