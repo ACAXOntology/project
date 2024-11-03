@@ -1,0 +1,40 @@
+,id,education,age,gender,political_leaning,religious_belief,post_text,hashtag_text,cut_post,cut_hashtag,position,news
+0,0,College or higher,20 to 30,Female,liberal,not religious,Everyone deserves the right to make informed decisions about their own bodies., #MyBodyMyChoice #WomensRights,"AbortionAsBodyChoice, AbortionAsRight","AbortionAsBodyChoice, AbortionAsRight",ProChoice,
+1,1,High school or lower,40 to 50,Female,conservative,religious,Every life is precious from the moment of conception., #ProLife #LifeMatters,AbortionIsAgainstLife,AbortionIsAgainstLife,ProLife,
+2,2,College or higher,20 to 30,Female,liberal,religious,"We must respect a woman's right to choose, no matter the circumstances.", #ReproductiveFreedom #ChoiceMatters,AbortionAsRight,AbortionAsRight,ProChoice,
+3,3,High school or lower,20 to 30,Male,conservative,religious,The right to life should always be protected., #ProtectLife #ProLifeVoices,"AbortionIsAgainstLife, ProtectTheUnborn",AbortionIsAgainstLife,ProLife,
+4,4,College or higher,30 to 40,Female,liberal,not religious,Access to abortion is essential healthcare., #ProChoice #AbortionRights,AbortionForHealthcare,AbortionAsRight,ProChoice,
+5,5,High school or lower,30 to 40,Female,conservative,religious,"Abortion is a moral failure, and we need to stand against it.", #SaveTheUnborn #ProLife,"AbortionIsMorallyWrong, ProtectTheUnborn",ProtectTheUnborn,ProLife,
+6,6,College or higher,20 to 30,Male,liberal,religious,Safe and legal abortion must remain a priority for our country., #RightToChoose #HealthcareForAll,"AbortionForHealthcare, AbortionAsRight","AbortionForHealthcare, AbortionAsRight",ProChoice,
+7,7,High school or lower,50 to 60,Female,conservative,religious,"Life begins at conception, and we need to protect that life.", #LifeMatters #ProLifeMovement,AbortionIsAgainstLife,AbortionIsAgainstLife,ProLife,
+8,8,College or higher,20 to 30,Male,liberal,not religious,"Reproductive rights are human rights, period.", #MyBodyMyChoice #FreedomToChoose,"AbortionAsBodyChoice, AbortionAsRight",AbortionAsBodyChoice,ProChoice,
+9,9,High school or lower,20 to 30,Female,conservative,religious,No child should be denied the right to live., #SaveLives #ProLifeGeneration,"ProtectTheUnborn
+",ProtectTheUnborn,ProLife,
+10,10,College or higher,30 to 40,Female,liberal,religious,Women deserve the right to control their reproductive health.,#WomensRights #AbortionRightsNow,"AbortionForHealthcare, AbortionAsRight",AbortionAsRight,ProChoice,
+11,11,High school or lower,20 to 30,Female,conservative,not religious,Every unborn child deserves a chance at life.,#ProtectTheInnocent #ProLife,"ProtectTheUnborn
+",ProtectTheUnborn,ProLife,
+12,12,College or higher,above 60,Female,liberal,not religious,Abortion access is about equality for all., #ProChoice #EqualRightsForWomen,AbortionForWomenEquality,AbortionForWomenEquality,ProChoice,
+13,13,High school or lower,above 60,Female,conservative,religious,Ending a pregnancy is ending a life., #ProLifeForever #SaveTheUnborn,"AbortionIsMurder, ProtectTheUnborn
+",ProtectTheUnborn,ProLife,
+14,14,College or higher,20 to 30,Female,liberal,religious,It's time to ensure reproductive rights for every woman.,#ReproductiveJustice #ProChoiceForAll,"AbortionAsRight, AbortionForWomenEquality",AbortionForWomenEquality,ProChoice,
+15,15,High school or lower,40 to 50,Male,conservative,religious,Abortion should never be an option., #LifeWins #DefendTheUnborn,ProtectTheUnborn,ProtectTheUnborn,ProLife,
+16,16,College or higher,above 60,Female,liberal,not religious,We need to keep abortion safe and accessible., #ProChoiceNow #HealthcareIsAHumanRight,AbortionForHealthcare,AbortionForHealthcare,ProChoice,
+17,17,High school or lower,50 to 60,Male,conservative,religious,Stand up for those who cannot speak for themselves.,#ProtectTheUnborn #ProLifeVoices,ProtectTheUnborn,ProtectTheUnborn,ProLife,
+18,18,College or higher,30 to 40,Female,liberal,religious,We cannot go back to a time when abortion was illegal., #AbortionRights #ProChoiceMovement,AbortionAsRight,AbortionAsRight,ProChoice,
+19,19,High school or lower,above 60,Female,conservative,not religious,Abortion ends a life and damages society., #ProLifeStand #DefendLife,"AbortionIsMurder, AbortionIsAgainstLife
+",AbortionIsAgainstLife,ProLife,
+20,20,College or higher,under 20,Male,liberal,not religious,Everyone deserves the right to make their own choices., #MyBodyMyChoice #AbortionIsHealthcare,"AbortionAsBodyChoice, AbortionForHealthcare","AbortionAsBodyChoice, AbortionForHealthcare",ProChoice,
+21,21,High school or lower,under 20,Male,conservative,religious,"The unborn have rights too, and we need to fight for them.", #LifeFirst #ProLifeForever,"ProtectTheUnborn
+",ProtectTheUnborn,ProLife,
+22,22,College or higher,30 to 40,Male,liberal,religious,"Abortion is healthcare, and it should remain a woman's choice.", #ReproductiveRights #ProChoiceNow,"AbortionForHealthcare, AbortionAsRight",AbortionAsRight,ProChoice,
+23,23,High school or lower,20 to 30,Female,conservative,not religious,Protect the future generations by standing against abortion., #SaveTheChildren #ProLifeGeneration,"ProtectTheUnborn
+",ProtectTheUnborn,ProLife,
+24,24,College or higher,20 to 30,Female,liberal,not religious,"With Roe v. Wade overturned, women everywhere are facing a future without access to safe abortions.",#HealthcareIsARight,AbortionForHealthcare,AbortionForHealthcare,ProChoice, Roe v. Wade
+25,25,College or higher,50 to 60,Female,liberal,not religious,A woman's health decisions should never be dictated by politics., #ProChoiceNow #WomensRights,"AbortionForHealthcare, AbortionAsRight",AbortionAsRight,ProChoice,
+26,26,High school or lower,above 60,Female,conservative,religious,We must be the voice for the voiceless., #DefendLife #ProLifeMovement,"ProtectTheUnborn
+",ProtectTheUnborn,ProLife,
+27,27,College or higher,under 20,Male,liberal,religious,We need to fight for reproductive justice for all women., #ProChoice #AbortionRights,"AbortionAsRight, AbortionForWomenEquality",AbortionAsRight,ProChoice,
+28,28,High school or lower,40 to 50,Male,conservative,not religious,Abortion is wrong and must be stopped., #ProLifeNow #LifeWins,AbortionIsMorallyWrong,,ProLife,
+29,29,College or higher,30 to 40,Female,liberal,not religious,Abortion access is fundamental to gender equality., #ProChoice #WomensEquality,AbortionForWomenEquality,AbortionForWomenEquality,ProChoice,
+30,30,High school or lower,20 to 30,Female,conservative,religious,All life is sacred and must be protected., #ProLifeVoices #SaveTheUnborn,"AbortionIsSin, ProtectTheUnborn",ProtectTheUnborn,ProLife,
+31,31,High school or lower,50 to 60,Male,conservative,religious,The recent ban in Texas shows we are moving in the right direction to protect life.,#ProLife,ProtectTheUnborn,,ProLife,Abortion ban in Texas
