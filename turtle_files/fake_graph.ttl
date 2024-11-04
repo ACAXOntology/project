@@ -1,0 +1,896 @@
+@prefix acaxo: <http://www.semanticweb.org/ACAXO#> .
+@prefix acaxo_individuals: <http://www.semanticweb.org/ACAXO/individuals#> .
+@prefix individuals: <https://github.com/ACAXOntology/> .
+@prefix mbe: <https://daselab.org/microblogentry#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix persp: <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+persp:Agent a owl:Class .
+
+persp:holds a owl:ObjectProperty .
+
+persp:perspectivisedAs a owl:ObjectProperty .
+
+persp:perspectivisedThrough a owl:ObjectProperty .
+
+persp:shotThrough a owl:ObjectProperty .
+
+acaxo:Age a owl:Class ;
+    rdfs:subClassOf acaxo:TXUserInfo .
+
+acaxo:NewsEvent a owl:Class .
+
+acaxo:contains a owl:ObjectProperty .
+
+acaxo:hasAge a owl:ObjectProperty .
+
+acaxo:hasContent a owl:DatatypeProperty .
+
+acaxo:hasEducation a owl:ObjectProperty .
+
+acaxo:hasGender a owl:ObjectProperty .
+
+acaxo:hasPoliticalLeaning a owl:ObjectProperty .
+
+acaxo:hasReligiousBelief a owl:ObjectProperty .
+
+acaxo:isAboutNews a owl:DatatypeProperty .
+
+acaxo_individuals:AbortionForEconomicEqualityPerspective a acaxo:AbortionForEconomicEquality .
+
+acaxo_individuals:EconomicEqualityPerspective a acaxo:EconomicEquality .
+
+acaxo_individuals:Neutral a persp:Attitude .
+
+mbe:writtenBy a owl:ObjectProperty .
+
+individuals:TXPost_0 a acaxo:TXPost ;
+    persp:perspectivisedAs acaxo_individuals:AbortionAsBodyChoicePerspective,
+        acaxo_individuals:AbortionAsRightPerspective ;
+    persp:shotThrough acaxo_individuals:BodyChoicePerspective,
+        acaxo_individuals:RightPerspective ;
+    acaxo:contains individuals:TXHashtag_0 ;
+    acaxo:hasContent "Everyone deserves the right to make informed decisions about their own bodies." ;
+    mbe:writtenBy individuals:TXUser_0 .
+
+individuals:TXPost_1 a acaxo:TXPost ;
+    persp:perspectivisedAs acaxo_individuals:AbortionIsAgainstLifePerspective ;
+    persp:shotThrough acaxo_individuals:AgainstLifePerspective ;
+    acaxo:contains individuals:TXHashtag_1 ;
+    acaxo:hasContent "Every life is precious from the moment of conception." ;
+    mbe:writtenBy individuals:TXUser_1 .
+
+individuals:TXPost_10 a acaxo:TXPost ;
+    persp:perspectivisedAs acaxo_individuals:AbortionAsRightPerspective,
+        acaxo_individuals:AbortionForHealthcarePerspective ;
+    persp:shotThrough acaxo_individuals:HealthcarePerspective,
+        acaxo_individuals:RightPerspective ;
+    acaxo:contains individuals:TXHashtag_10 ;
+    acaxo:hasContent "Women deserve the right to control their reproductive health." ;
+    mbe:writtenBy individuals:TXUser_10 .
+
+individuals:TXPost_11 a acaxo:TXPost ;
+    persp:perspectivisedAs acaxo_individuals:ProtectTheUnbornPerspective ;
+    persp:shotThrough acaxo_individuals:TheUnbornPerspective ;
+    acaxo:contains individuals:TXHashtag_11 ;
+    acaxo:hasContent "Every unborn child deserves a chance at life." ;
+    mbe:writtenBy individuals:TXUser_11 .
+
+individuals:TXPost_12 a acaxo:TXPost ;
+    persp:perspectivisedAs acaxo_individuals:AbortionForWomenEqualityPerspective ;
+    persp:shotThrough acaxo_individuals:WomenEqualityPerspective ;
+    acaxo:contains individuals:TXHashtag_12 ;
+    acaxo:hasContent "Abortion access is about equality for all." ;
+    mbe:writtenBy individuals:TXUser_12 .
+
+individuals:TXPost_13 a acaxo:TXPost ;
+    persp:perspectivisedAs acaxo_individuals:AbortionIsMurderPerspective,
+        acaxo_individuals:ProtectTheUnbornPerspective ;
+    persp:shotThrough acaxo_individuals:MurderPerspective,
+        acaxo_individuals:TheUnbornPerspective ;
+    acaxo:contains individuals:TXHashtag_13 ;
+    acaxo:hasContent "Ending a pregnancy is ending a life." ;
+    mbe:writtenBy individuals:TXUser_13 .
+
+individuals:TXPost_14 a acaxo:TXPost ;
+    persp:perspectivisedAs acaxo_individuals:AbortionAsRightPerspective,
+        acaxo_individuals:AbortionForWomenEqualityPerspective ;
+    persp:shotThrough acaxo_individuals:RightPerspective,
+        acaxo_individuals:WomenEqualityPerspective ;
+    acaxo:contains individuals:TXHashtag_14 ;
+    acaxo:hasContent "It's time to ensure reproductive rights for every woman." ;
+    mbe:writtenBy individuals:TXUser_14 .
+
+individuals:TXPost_15 a acaxo:TXPost ;
+    persp:perspectivisedAs acaxo_individuals:ProtectTheUnbornPerspective ;
+    persp:shotThrough acaxo_individuals:TheUnbornPerspective ;
+    acaxo:contains individuals:TXHashtag_15 ;
+    acaxo:hasContent "Abortion should never be an option." ;
+    mbe:writtenBy individuals:TXUser_15 .
+
+individuals:TXPost_16 a acaxo:TXPost ;
+    persp:perspectivisedAs acaxo_individuals:AbortionForHealthcarePerspective ;
+    persp:shotThrough acaxo_individuals:HealthcarePerspective ;
+    acaxo:contains individuals:TXHashtag_16 ;
+    acaxo:hasContent "We need to keep abortion safe and accessible." ;
+    mbe:writtenBy individuals:TXUser_16 .
+
+individuals:TXPost_17 a acaxo:TXPost ;
+    persp:perspectivisedAs acaxo_individuals:ProtectTheUnbornPerspective ;
+    persp:shotThrough acaxo_individuals:TheUnbornPerspective ;
+    acaxo:contains individuals:TXHashtag_17 ;
+    acaxo:hasContent "Stand up for those who cannot speak for themselves." ;
+    mbe:writtenBy individuals:TXUser_17 .
+
+individuals:TXPost_18 a acaxo:TXPost ;
+    persp:perspectivisedAs acaxo_individuals:AbortionAsRightPerspective ;
+    persp:shotThrough acaxo_individuals:RightPerspective ;
+    acaxo:contains individuals:TXHashtag_18 ;
+    acaxo:hasContent "We cannot go back to a time when abortion was illegal." ;
+    mbe:writtenBy individuals:TXUser_18 .
+
+individuals:TXPost_19 a acaxo:TXPost ;
+    persp:perspectivisedAs acaxo_individuals:AbortionIsAgainstLifePerspective,
+        acaxo_individuals:AbortionIsMurderPerspective ;
+    persp:shotThrough acaxo_individuals:AgainstLifePerspective,
+        acaxo_individuals:MurderPerspective ;
+    acaxo:contains individuals:TXHashtag_19 ;
+    acaxo:hasContent "Abortion ends a life and damages society." ;
+    mbe:writtenBy individuals:TXUser_19 .
+
+individuals:TXPost_2 a acaxo:TXPost ;
+    persp:perspectivisedAs acaxo_individuals:AbortionAsRightPerspective ;
+    persp:shotThrough acaxo_individuals:RightPerspective ;
+    acaxo:contains individuals:TXHashtag_2 ;
+    acaxo:hasContent "We must respect a woman's right to choose, no matter the circumstances." ;
+    mbe:writtenBy individuals:TXUser_2 .
+
+individuals:TXPost_20 a acaxo:TXPost ;
+    persp:perspectivisedAs acaxo_individuals:AbortionAsBodyChoicePerspective,
+        acaxo_individuals:AbortionForHealthcarePerspective ;
+    persp:shotThrough acaxo_individuals:BodyChoicePerspective,
+        acaxo_individuals:HealthcarePerspective ;
+    acaxo:contains individuals:TXHashtag_20 ;
+    acaxo:hasContent "Everyone deserves the right to make their own choices." ;
+    mbe:writtenBy individuals:TXUser_20 .
+
+individuals:TXPost_21 a acaxo:TXPost ;
+    persp:perspectivisedAs acaxo_individuals:ProtectTheUnbornPerspective ;
+    persp:shotThrough acaxo_individuals:TheUnbornPerspective ;
+    acaxo:contains individuals:TXHashtag_21 ;
+    acaxo:hasContent "The unborn have rights too, and we need to fight for them." ;
+    mbe:writtenBy individuals:TXUser_21 .
+
+individuals:TXPost_22 a acaxo:TXPost ;
+    persp:perspectivisedAs acaxo_individuals:AbortionAsRightPerspective,
+        acaxo_individuals:AbortionForHealthcarePerspective ;
+    persp:shotThrough acaxo_individuals:HealthcarePerspective,
+        acaxo_individuals:RightPerspective ;
+    acaxo:contains individuals:TXHashtag_22 ;
+    acaxo:hasContent "Abortion is healthcare, and it should remain a woman's choice." ;
+    mbe:writtenBy individuals:TXUser_22 .
+
+individuals:TXPost_23 a acaxo:TXPost ;
+    persp:perspectivisedAs acaxo_individuals:ProtectTheUnbornPerspective ;
+    persp:shotThrough acaxo_individuals:TheUnbornPerspective ;
+    acaxo:contains individuals:TXHashtag_23 ;
+    acaxo:hasContent "Protect the future generations by standing against abortion." ;
+    mbe:writtenBy individuals:TXUser_23 .
+
+individuals:TXPost_24 a acaxo:TXPost ;
+    persp:perspectivisedAs acaxo_individuals:AbortionForHealthcarePerspective ;
+    persp:shotThrough acaxo_individuals:HealthcarePerspective ;
+    acaxo:contains individuals:TXHashtag_24 ;
+    acaxo:hasContent "With Roe v. Wade overturned, women everywhere are facing a future without access to safe abortions." ;
+    acaxo:isAboutNews " Roe v. Wade" ;
+    mbe:writtenBy individuals:TXUser_24 .
+
+individuals:TXPost_25 a acaxo:TXPost ;
+    persp:perspectivisedAs acaxo_individuals:AbortionAsRightPerspective,
+        acaxo_individuals:AbortionForHealthcarePerspective ;
+    persp:shotThrough acaxo_individuals:HealthcarePerspective,
+        acaxo_individuals:RightPerspective ;
+    acaxo:contains individuals:TXHashtag_25 ;
+    acaxo:hasContent "A woman's health decisions should never be dictated by politics." ;
+    mbe:writtenBy individuals:TXUser_25 .
+
+individuals:TXPost_26 a acaxo:TXPost ;
+    persp:perspectivisedAs acaxo_individuals:ProtectTheUnbornPerspective ;
+    persp:shotThrough acaxo_individuals:TheUnbornPerspective ;
+    acaxo:contains individuals:TXHashtag_26 ;
+    acaxo:hasContent "We must be the voice for the voiceless." ;
+    mbe:writtenBy individuals:TXUser_26 .
+
+individuals:TXPost_27 a acaxo:TXPost ;
+    persp:perspectivisedAs acaxo_individuals:AbortionAsRightPerspective,
+        acaxo_individuals:AbortionForWomenEqualityPerspective ;
+    persp:shotThrough acaxo_individuals:RightPerspective,
+        acaxo_individuals:WomenEqualityPerspective ;
+    acaxo:contains individuals:TXHashtag_27 ;
+    acaxo:hasContent "We need to fight for reproductive justice for all women." ;
+    mbe:writtenBy individuals:TXUser_27 .
+
+individuals:TXPost_28 a acaxo:TXPost ;
+    persp:perspectivisedAs acaxo_individuals:AbortionIsMorallyWrongPerspective ;
+    persp:shotThrough acaxo_individuals:MorallyWrongPerspective ;
+    acaxo:contains individuals:TXHashtag_28 ;
+    acaxo:hasContent "Abortion is wrong and must be stopped." ;
+    mbe:writtenBy individuals:TXUser_28 .
+
+individuals:TXPost_29 a acaxo:TXPost ;
+    persp:perspectivisedAs acaxo_individuals:AbortionForWomenEqualityPerspective ;
+    persp:shotThrough acaxo_individuals:WomenEqualityPerspective ;
+    acaxo:contains individuals:TXHashtag_29 ;
+    acaxo:hasContent "Abortion access is fundamental to gender equality." ;
+    mbe:writtenBy individuals:TXUser_29 .
+
+individuals:TXPost_3 a acaxo:TXPost ;
+    persp:perspectivisedAs acaxo_individuals:AbortionIsAgainstLifePerspective,
+        acaxo_individuals:ProtectTheUnbornPerspective ;
+    persp:shotThrough acaxo_individuals:AgainstLifePerspective,
+        acaxo_individuals:TheUnbornPerspective ;
+    acaxo:contains individuals:TXHashtag_3 ;
+    acaxo:hasContent "The right to life should always be protected." ;
+    mbe:writtenBy individuals:TXUser_3 .
+
+individuals:TXPost_30 a acaxo:TXPost ;
+    persp:perspectivisedAs acaxo_individuals:AbortionIsSinPerspective,
+        acaxo_individuals:ProtectTheUnbornPerspective ;
+    persp:shotThrough acaxo_individuals:SinPerspective,
+        acaxo_individuals:TheUnbornPerspective ;
+    acaxo:contains individuals:TXHashtag_30 ;
+    acaxo:hasContent "All life is sacred and must be protected." ;
+    mbe:writtenBy individuals:TXUser_30 .
+
+individuals:TXPost_31 a acaxo:TXPost ;
+    persp:perspectivisedAs acaxo_individuals:ProtectTheUnbornPerspective ;
+    persp:shotThrough acaxo_individuals:TheUnbornPerspective ;
+    acaxo:contains individuals:TXHashtag_31 ;
+    acaxo:hasContent "The recent ban in Texas shows we are moving in the right direction to protect life." ;
+    acaxo:isAboutNews "Abortion ban in Texas" ;
+    mbe:writtenBy individuals:TXUser_31 .
+
+individuals:TXPost_4 a acaxo:TXPost ;
+    persp:perspectivisedAs acaxo_individuals:AbortionForHealthcarePerspective ;
+    persp:shotThrough acaxo_individuals:HealthcarePerspective ;
+    acaxo:contains individuals:TXHashtag_4 ;
+    acaxo:hasContent "Access to abortion is essential healthcare." ;
+    mbe:writtenBy individuals:TXUser_4 .
+
+individuals:TXPost_5 a acaxo:TXPost ;
+    persp:perspectivisedAs acaxo_individuals:AbortionIsMorallyWrongPerspective,
+        acaxo_individuals:ProtectTheUnbornPerspective ;
+    persp:shotThrough acaxo_individuals:MorallyWrongPerspective,
+        acaxo_individuals:TheUnbornPerspective ;
+    acaxo:contains individuals:TXHashtag_5 ;
+    acaxo:hasContent "Abortion is a moral failure, and we need to stand against it." ;
+    mbe:writtenBy individuals:TXUser_5 .
+
+individuals:TXPost_6 a acaxo:TXPost ;
+    persp:perspectivisedAs acaxo_individuals:AbortionAsRightPerspective,
+        acaxo_individuals:AbortionForHealthcarePerspective ;
+    persp:shotThrough acaxo_individuals:HealthcarePerspective,
+        acaxo_individuals:RightPerspective ;
+    acaxo:contains individuals:TXHashtag_6 ;
+    acaxo:hasContent "Safe and legal abortion must remain a priority for our country." ;
+    mbe:writtenBy individuals:TXUser_6 .
+
+individuals:TXPost_7 a acaxo:TXPost ;
+    persp:perspectivisedAs acaxo_individuals:AbortionIsAgainstLifePerspective ;
+    persp:shotThrough acaxo_individuals:AgainstLifePerspective ;
+    acaxo:contains individuals:TXHashtag_7 ;
+    acaxo:hasContent "Life begins at conception, and we need to protect that life." ;
+    mbe:writtenBy individuals:TXUser_7 .
+
+individuals:TXPost_8 a acaxo:TXPost ;
+    persp:perspectivisedAs acaxo_individuals:AbortionAsBodyChoicePerspective,
+        acaxo_individuals:AbortionAsRightPerspective ;
+    persp:shotThrough acaxo_individuals:BodyChoicePerspective,
+        acaxo_individuals:RightPerspective ;
+    acaxo:contains individuals:TXHashtag_8 ;
+    acaxo:hasContent "Reproductive rights are human rights, period." ;
+    mbe:writtenBy individuals:TXUser_8 .
+
+individuals:TXPost_9 a acaxo:TXPost ;
+    persp:perspectivisedAs acaxo_individuals:ProtectTheUnbornPerspective ;
+    persp:shotThrough acaxo_individuals:TheUnbornPerspective ;
+    acaxo:contains individuals:TXHashtag_9 ;
+    acaxo:hasContent "No child should be denied the right to live." ;
+    mbe:writtenBy individuals:TXUser_9 .
+
+persp:Background a owl:Class .
+
+persp:Eventuality a owl:Class .
+
+acaxo:AbortionAsBodyChoice a owl:Class ;
+    rdfs:subClassOf persp:Cut .
+
+acaxo:AbortionAsRight a owl:Class ;
+    rdfs:subClassOf persp:Cut .
+
+acaxo:AbortionForEconomicEquality a owl:Class ;
+    rdfs:subClassOf acaxo:AbortionForWomenEquality .
+
+acaxo:AbortionForHealthcare a owl:Class ;
+    rdfs:subClassOf acaxo:AbortionForWomenEquality .
+
+acaxo:AbortionIsMurder a owl:Class ;
+    rdfs:subClassOf acaxo:AbortionIsAgainstLife .
+
+acaxo:AbortionIsSin a owl:Class ;
+    rdfs:subClassOf acaxo:AbortionAsMorallyWrong .
+
+acaxo:BodyChoice a owl:Class ;
+    rdfs:subClassOf persp:Lens .
+
+acaxo:EconomicEquality a owl:Class ;
+    rdfs:subClassOf acaxo:WomenEquality .
+
+acaxo:Healthcare a owl:Class ;
+    rdfs:subClassOf acaxo:WomenEquality .
+
+acaxo:Murder a owl:Class ;
+    rdfs:subClassOf acaxo:AgainstLife .
+
+acaxo:ProtectTheUnborn a owl:Class ;
+    rdfs:subClassOf acaxo:AbortionIsAgainstLife .
+
+acaxo:Right a owl:Class ;
+    rdfs:subClassOf persp:Lens .
+
+acaxo:Sin a owl:Class ;
+    rdfs:subClassOf acaxo:MorallyWrong .
+
+acaxo:TheUnborn a owl:Class ;
+    rdfs:subClassOf acaxo:AgainstLife .
+
+individuals:TXHashtag_0 a acaxo:TXHashtag ;
+    persp:perspectivisedAs acaxo_individuals:AbortionAsBodyChoicePerspective,
+        acaxo_individuals:AbortionAsRightPerspective ;
+    persp:shotThrough acaxo_individuals:BodyChoicePerspective,
+        acaxo_individuals:RightPerspective ;
+    acaxo:hasContent " #MyBodyMyChoice #WomensRights" .
+
+individuals:TXHashtag_1 a acaxo:TXHashtag ;
+    persp:perspectivisedAs acaxo_individuals:AbortionIsAgainstLifePerspective ;
+    persp:shotThrough acaxo_individuals:AgainstLifePerspective ;
+    acaxo:hasContent " #ProLife #LifeMatters" .
+
+individuals:TXHashtag_10 a acaxo:TXHashtag ;
+    persp:perspectivisedAs acaxo_individuals:AbortionAsRightPerspective,
+        acaxo_individuals:AbortionForHealthcarePerspective ;
+    persp:shotThrough acaxo_individuals:HealthcarePerspective,
+        acaxo_individuals:RightPerspective ;
+    acaxo:hasContent "#WomensRights #AbortionRightsNow" .
+
+individuals:TXHashtag_11 a acaxo:TXHashtag ;
+    persp:perspectivisedAs acaxo_individuals:ProtectTheUnbornPerspective ;
+    persp:shotThrough acaxo_individuals:TheUnbornPerspective ;
+    acaxo:hasContent "#ProtectTheInnocent #ProLife" .
+
+individuals:TXHashtag_12 a acaxo:TXHashtag ;
+    persp:perspectivisedAs acaxo_individuals:AbortionForWomenEqualityPerspective ;
+    persp:shotThrough acaxo_individuals:WomenEqualityPerspective ;
+    acaxo:hasContent " #ProChoice #EqualRightsForWomen" .
+
+individuals:TXHashtag_13 a acaxo:TXHashtag ;
+    persp:perspectivisedAs acaxo_individuals:AbortionIsMurderPerspective,
+        acaxo_individuals:ProtectTheUnbornPerspective ;
+    persp:shotThrough acaxo_individuals:MurderPerspective,
+        acaxo_individuals:TheUnbornPerspective ;
+    acaxo:hasContent " #ProLifeForever #SaveTheUnborn" .
+
+individuals:TXHashtag_14 a acaxo:TXHashtag ;
+    persp:perspectivisedAs acaxo_individuals:AbortionAsRightPerspective,
+        acaxo_individuals:AbortionForWomenEqualityPerspective ;
+    persp:shotThrough acaxo_individuals:RightPerspective,
+        acaxo_individuals:WomenEqualityPerspective ;
+    acaxo:hasContent "#ReproductiveJustice #ProChoiceForAll" .
+
+individuals:TXHashtag_15 a acaxo:TXHashtag ;
+    persp:perspectivisedAs acaxo_individuals:ProtectTheUnbornPerspective ;
+    persp:shotThrough acaxo_individuals:TheUnbornPerspective ;
+    acaxo:hasContent " #LifeWins #DefendTheUnborn" .
+
+individuals:TXHashtag_16 a acaxo:TXHashtag ;
+    persp:perspectivisedAs acaxo_individuals:AbortionForHealthcarePerspective ;
+    persp:shotThrough acaxo_individuals:HealthcarePerspective ;
+    acaxo:hasContent " #ProChoiceNow #HealthcareIsAHumanRight" .
+
+individuals:TXHashtag_17 a acaxo:TXHashtag ;
+    persp:perspectivisedAs acaxo_individuals:ProtectTheUnbornPerspective ;
+    persp:shotThrough acaxo_individuals:TheUnbornPerspective ;
+    acaxo:hasContent "#ProtectTheUnborn #ProLifeVoices" .
+
+individuals:TXHashtag_18 a acaxo:TXHashtag ;
+    persp:perspectivisedAs acaxo_individuals:AbortionAsRightPerspective ;
+    persp:shotThrough acaxo_individuals:RightPerspective ;
+    acaxo:hasContent " #AbortionRights #ProChoiceMovement" .
+
+individuals:TXHashtag_19 a acaxo:TXHashtag ;
+    persp:perspectivisedAs acaxo_individuals:AbortionIsAgainstLifePerspective,
+        acaxo_individuals:AbortionIsMurderPerspective ;
+    persp:shotThrough acaxo_individuals:AgainstLifePerspective,
+        acaxo_individuals:MurderPerspective ;
+    acaxo:hasContent " #ProLifeStand #DefendLife" .
+
+individuals:TXHashtag_2 a acaxo:TXHashtag ;
+    persp:perspectivisedAs acaxo_individuals:AbortionAsRightPerspective ;
+    persp:shotThrough acaxo_individuals:RightPerspective ;
+    acaxo:hasContent " #ReproductiveFreedom #ChoiceMatters" .
+
+individuals:TXHashtag_20 a acaxo:TXHashtag ;
+    persp:perspectivisedAs acaxo_individuals:AbortionAsBodyChoicePerspective,
+        acaxo_individuals:AbortionForHealthcarePerspective ;
+    persp:shotThrough acaxo_individuals:BodyChoicePerspective,
+        acaxo_individuals:HealthcarePerspective ;
+    acaxo:hasContent " #MyBodyMyChoice #AbortionIsHealthcare" .
+
+individuals:TXHashtag_21 a acaxo:TXHashtag ;
+    persp:perspectivisedAs acaxo_individuals:ProtectTheUnbornPerspective ;
+    persp:shotThrough acaxo_individuals:TheUnbornPerspective ;
+    acaxo:hasContent " #LifeFirst #ProLifeForever" .
+
+individuals:TXHashtag_22 a acaxo:TXHashtag ;
+    persp:perspectivisedAs acaxo_individuals:AbortionAsRightPerspective,
+        acaxo_individuals:AbortionForHealthcarePerspective ;
+    persp:shotThrough acaxo_individuals:HealthcarePerspective,
+        acaxo_individuals:RightPerspective ;
+    acaxo:hasContent " #ReproductiveRights #ProChoiceNow" .
+
+individuals:TXHashtag_23 a acaxo:TXHashtag ;
+    persp:perspectivisedAs acaxo_individuals:ProtectTheUnbornPerspective ;
+    persp:shotThrough acaxo_individuals:TheUnbornPerspective ;
+    acaxo:hasContent " #SaveTheChildren #ProLifeGeneration" .
+
+individuals:TXHashtag_24 a acaxo:TXHashtag ;
+    persp:perspectivisedAs acaxo_individuals:AbortionForHealthcarePerspective ;
+    persp:shotThrough acaxo_individuals:HealthcarePerspective ;
+    acaxo:hasContent "#HealthcareIsARight" .
+
+individuals:TXHashtag_25 a acaxo:TXHashtag ;
+    persp:perspectivisedAs acaxo_individuals:AbortionAsRightPerspective,
+        acaxo_individuals:AbortionForHealthcarePerspective ;
+    persp:shotThrough acaxo_individuals:HealthcarePerspective,
+        acaxo_individuals:RightPerspective ;
+    acaxo:hasContent " #ProChoiceNow #WomensRights" .
+
+individuals:TXHashtag_26 a acaxo:TXHashtag ;
+    persp:perspectivisedAs acaxo_individuals:ProtectTheUnbornPerspective ;
+    persp:shotThrough acaxo_individuals:TheUnbornPerspective ;
+    acaxo:hasContent " #DefendLife #ProLifeMovement" .
+
+individuals:TXHashtag_27 a acaxo:TXHashtag ;
+    persp:perspectivisedAs acaxo_individuals:AbortionAsRightPerspective,
+        acaxo_individuals:AbortionForWomenEqualityPerspective ;
+    persp:shotThrough acaxo_individuals:RightPerspective,
+        acaxo_individuals:WomenEqualityPerspective ;
+    acaxo:hasContent " #ProChoice #AbortionRights" .
+
+individuals:TXHashtag_28 a acaxo:TXHashtag ;
+    persp:perspectivisedAs acaxo_individuals:AbortionIsMorallyWrongPerspective ;
+    persp:shotThrough acaxo_individuals:MorallyWrongPerspective ;
+    acaxo:hasContent " #ProLifeNow #LifeWins" .
+
+individuals:TXHashtag_29 a acaxo:TXHashtag ;
+    persp:perspectivisedAs acaxo_individuals:AbortionForWomenEqualityPerspective ;
+    persp:shotThrough acaxo_individuals:WomenEqualityPerspective ;
+    acaxo:hasContent " #ProChoice #WomensEquality" .
+
+individuals:TXHashtag_3 a acaxo:TXHashtag ;
+    persp:perspectivisedAs acaxo_individuals:AbortionIsAgainstLifePerspective,
+        acaxo_individuals:ProtectTheUnbornPerspective ;
+    persp:shotThrough acaxo_individuals:AgainstLifePerspective,
+        acaxo_individuals:TheUnbornPerspective ;
+    acaxo:hasContent " #ProtectLife #ProLifeVoices" .
+
+individuals:TXHashtag_30 a acaxo:TXHashtag ;
+    persp:perspectivisedAs acaxo_individuals:AbortionIsSinPerspective,
+        acaxo_individuals:ProtectTheUnbornPerspective ;
+    persp:shotThrough acaxo_individuals:SinPerspective,
+        acaxo_individuals:TheUnbornPerspective ;
+    acaxo:hasContent " #ProLifeVoices #SaveTheUnborn" .
+
+individuals:TXHashtag_31 a acaxo:TXHashtag ;
+    persp:perspectivisedAs acaxo_individuals:ProtectTheUnbornPerspective ;
+    persp:shotThrough acaxo_individuals:TheUnbornPerspective ;
+    acaxo:hasContent "#ProLife" .
+
+individuals:TXHashtag_4 a acaxo:TXHashtag ;
+    persp:perspectivisedAs acaxo_individuals:AbortionForHealthcarePerspective ;
+    persp:shotThrough acaxo_individuals:HealthcarePerspective ;
+    acaxo:hasContent " #ProChoice #AbortionRights" .
+
+individuals:TXHashtag_5 a acaxo:TXHashtag ;
+    persp:perspectivisedAs acaxo_individuals:AbortionIsMorallyWrongPerspective,
+        acaxo_individuals:ProtectTheUnbornPerspective ;
+    persp:shotThrough acaxo_individuals:MorallyWrongPerspective,
+        acaxo_individuals:TheUnbornPerspective ;
+    acaxo:hasContent " #SaveTheUnborn #ProLife" .
+
+individuals:TXHashtag_6 a acaxo:TXHashtag ;
+    persp:perspectivisedAs acaxo_individuals:AbortionAsRightPerspective,
+        acaxo_individuals:AbortionForHealthcarePerspective ;
+    persp:shotThrough acaxo_individuals:HealthcarePerspective,
+        acaxo_individuals:RightPerspective ;
+    acaxo:hasContent " #RightToChoose #HealthcareForAll" .
+
+individuals:TXHashtag_7 a acaxo:TXHashtag ;
+    persp:perspectivisedAs acaxo_individuals:AbortionIsAgainstLifePerspective ;
+    persp:shotThrough acaxo_individuals:AgainstLifePerspective ;
+    acaxo:hasContent " #LifeMatters #ProLifeMovement" .
+
+individuals:TXHashtag_8 a acaxo:TXHashtag ;
+    persp:perspectivisedAs acaxo_individuals:AbortionAsBodyChoicePerspective,
+        acaxo_individuals:AbortionAsRightPerspective ;
+    persp:shotThrough acaxo_individuals:BodyChoicePerspective,
+        acaxo_individuals:RightPerspective ;
+    acaxo:hasContent " #MyBodyMyChoice #FreedomToChoose" .
+
+individuals:TXHashtag_9 a acaxo:TXHashtag ;
+    persp:perspectivisedAs acaxo_individuals:ProtectTheUnbornPerspective ;
+    persp:shotThrough acaxo_individuals:TheUnbornPerspective ;
+    acaxo:hasContent " #SaveLives #ProLifeGeneration" .
+
+individuals:TXUser_0 a acaxo:TXUser ;
+    persp:holds acaxo_individuals:ProChoice ;
+    acaxo:hasAge acaxo_individuals:Age20To30 ;
+    acaxo:hasEducation acaxo_individuals:CollegeOrHigher ;
+    acaxo:hasGender acaxo_individuals:Female ;
+    acaxo:hasPoliticalLeaning acaxo_individuals:Liberal ;
+    acaxo:hasReligiousBelief acaxo_individuals:NotReligious .
+
+individuals:TXUser_1 a acaxo:TXUser ;
+    persp:holds acaxo_individuals:ProLife ;
+    acaxo:hasAge acaxo_individuals:Age40To50 ;
+    acaxo:hasEducation acaxo_individuals:HighschoolOrLower ;
+    acaxo:hasGender acaxo_individuals:Female ;
+    acaxo:hasPoliticalLeaning acaxo_individuals:Conservative ;
+    acaxo:hasReligiousBelief acaxo_individuals:Religious .
+
+individuals:TXUser_10 a acaxo:TXUser ;
+    persp:holds acaxo_individuals:ProChoice ;
+    acaxo:hasAge acaxo_individuals:Age30To40 ;
+    acaxo:hasEducation acaxo_individuals:CollegeOrHigher ;
+    acaxo:hasGender acaxo_individuals:Female ;
+    acaxo:hasPoliticalLeaning acaxo_individuals:Liberal ;
+    acaxo:hasReligiousBelief acaxo_individuals:Religious .
+
+individuals:TXUser_11 a acaxo:TXUser ;
+    persp:holds acaxo_individuals:ProLife ;
+    acaxo:hasAge acaxo_individuals:Age20To30 ;
+    acaxo:hasEducation acaxo_individuals:HighschoolOrLower ;
+    acaxo:hasGender acaxo_individuals:Female ;
+    acaxo:hasPoliticalLeaning acaxo_individuals:Conservative ;
+    acaxo:hasReligiousBelief acaxo_individuals:NotReligious .
+
+individuals:TXUser_12 a acaxo:TXUser ;
+    persp:holds acaxo_individuals:ProChoice ;
+    acaxo:hasAge acaxo_individuals:AgeAbove60 ;
+    acaxo:hasEducation acaxo_individuals:CollegeOrHigher ;
+    acaxo:hasGender acaxo_individuals:Female ;
+    acaxo:hasPoliticalLeaning acaxo_individuals:Liberal ;
+    acaxo:hasReligiousBelief acaxo_individuals:NotReligious .
+
+individuals:TXUser_13 a acaxo:TXUser ;
+    persp:holds acaxo_individuals:ProLife ;
+    acaxo:hasAge acaxo_individuals:AgeAbove60 ;
+    acaxo:hasEducation acaxo_individuals:HighschoolOrLower ;
+    acaxo:hasGender acaxo_individuals:Female ;
+    acaxo:hasPoliticalLeaning acaxo_individuals:Conservative ;
+    acaxo:hasReligiousBelief acaxo_individuals:Religious .
+
+individuals:TXUser_14 a acaxo:TXUser ;
+    persp:holds acaxo_individuals:ProChoice ;
+    acaxo:hasAge acaxo_individuals:Age20To30 ;
+    acaxo:hasEducation acaxo_individuals:CollegeOrHigher ;
+    acaxo:hasGender acaxo_individuals:Female ;
+    acaxo:hasPoliticalLeaning acaxo_individuals:Liberal ;
+    acaxo:hasReligiousBelief acaxo_individuals:Religious .
+
+individuals:TXUser_15 a acaxo:TXUser ;
+    persp:holds acaxo_individuals:ProLife ;
+    acaxo:hasAge acaxo_individuals:Age40To50 ;
+    acaxo:hasEducation acaxo_individuals:HighschoolOrLower ;
+    acaxo:hasGender acaxo_individuals:Male ;
+    acaxo:hasPoliticalLeaning acaxo_individuals:Conservative ;
+    acaxo:hasReligiousBelief acaxo_individuals:Religious .
+
+individuals:TXUser_16 a acaxo:TXUser ;
+    persp:holds acaxo_individuals:ProChoice ;
+    acaxo:hasAge acaxo_individuals:AgeAbove60 ;
+    acaxo:hasEducation acaxo_individuals:CollegeOrHigher ;
+    acaxo:hasGender acaxo_individuals:Female ;
+    acaxo:hasPoliticalLeaning acaxo_individuals:Liberal ;
+    acaxo:hasReligiousBelief acaxo_individuals:NotReligious .
+
+individuals:TXUser_17 a acaxo:TXUser ;
+    persp:holds acaxo_individuals:ProLife ;
+    acaxo:hasAge acaxo_individuals:Age50To60 ;
+    acaxo:hasEducation acaxo_individuals:HighschoolOrLower ;
+    acaxo:hasGender acaxo_individuals:Male ;
+    acaxo:hasPoliticalLeaning acaxo_individuals:Conservative ;
+    acaxo:hasReligiousBelief acaxo_individuals:Religious .
+
+individuals:TXUser_18 a acaxo:TXUser ;
+    persp:holds acaxo_individuals:ProChoice ;
+    acaxo:hasAge acaxo_individuals:Age30To40 ;
+    acaxo:hasEducation acaxo_individuals:CollegeOrHigher ;
+    acaxo:hasGender acaxo_individuals:Female ;
+    acaxo:hasPoliticalLeaning acaxo_individuals:Liberal ;
+    acaxo:hasReligiousBelief acaxo_individuals:Religious .
+
+individuals:TXUser_19 a acaxo:TXUser ;
+    persp:holds acaxo_individuals:ProLife ;
+    acaxo:hasAge acaxo_individuals:AgeAbove60 ;
+    acaxo:hasEducation acaxo_individuals:HighschoolOrLower ;
+    acaxo:hasGender acaxo_individuals:Female ;
+    acaxo:hasPoliticalLeaning acaxo_individuals:Conservative ;
+    acaxo:hasReligiousBelief acaxo_individuals:NotReligious .
+
+individuals:TXUser_2 a acaxo:TXUser ;
+    persp:holds acaxo_individuals:ProChoice ;
+    acaxo:hasAge acaxo_individuals:Age20To30 ;
+    acaxo:hasEducation acaxo_individuals:CollegeOrHigher ;
+    acaxo:hasGender acaxo_individuals:Female ;
+    acaxo:hasPoliticalLeaning acaxo_individuals:Liberal ;
+    acaxo:hasReligiousBelief acaxo_individuals:Religious .
+
+individuals:TXUser_20 a acaxo:TXUser ;
+    persp:holds acaxo_individuals:ProChoice ;
+    acaxo:hasAge acaxo_individuals:AgeUnder20 ;
+    acaxo:hasEducation acaxo_individuals:CollegeOrHigher ;
+    acaxo:hasGender acaxo_individuals:Male ;
+    acaxo:hasPoliticalLeaning acaxo_individuals:Liberal ;
+    acaxo:hasReligiousBelief acaxo_individuals:NotReligious .
+
+individuals:TXUser_21 a acaxo:TXUser ;
+    persp:holds acaxo_individuals:ProLife ;
+    acaxo:hasAge acaxo_individuals:AgeUnder20 ;
+    acaxo:hasEducation acaxo_individuals:HighschoolOrLower ;
+    acaxo:hasGender acaxo_individuals:Male ;
+    acaxo:hasPoliticalLeaning acaxo_individuals:Conservative ;
+    acaxo:hasReligiousBelief acaxo_individuals:Religious .
+
+individuals:TXUser_22 a acaxo:TXUser ;
+    persp:holds acaxo_individuals:ProChoice ;
+    acaxo:hasAge acaxo_individuals:Age30To40 ;
+    acaxo:hasEducation acaxo_individuals:CollegeOrHigher ;
+    acaxo:hasGender acaxo_individuals:Male ;
+    acaxo:hasPoliticalLeaning acaxo_individuals:Liberal ;
+    acaxo:hasReligiousBelief acaxo_individuals:Religious .
+
+individuals:TXUser_23 a acaxo:TXUser ;
+    persp:holds acaxo_individuals:ProLife ;
+    acaxo:hasAge acaxo_individuals:Age20To30 ;
+    acaxo:hasEducation acaxo_individuals:HighschoolOrLower ;
+    acaxo:hasGender acaxo_individuals:Female ;
+    acaxo:hasPoliticalLeaning acaxo_individuals:Conservative ;
+    acaxo:hasReligiousBelief acaxo_individuals:NotReligious .
+
+individuals:TXUser_24 a acaxo:TXUser ;
+    persp:holds acaxo_individuals:ProChoice ;
+    acaxo:hasAge acaxo_individuals:Age20To30 ;
+    acaxo:hasEducation acaxo_individuals:CollegeOrHigher ;
+    acaxo:hasGender acaxo_individuals:Female ;
+    acaxo:hasPoliticalLeaning acaxo_individuals:Liberal ;
+    acaxo:hasReligiousBelief acaxo_individuals:NotReligious .
+
+individuals:TXUser_25 a acaxo:TXUser ;
+    persp:holds acaxo_individuals:ProChoice ;
+    acaxo:hasAge acaxo_individuals:Age50To60 ;
+    acaxo:hasEducation acaxo_individuals:CollegeOrHigher ;
+    acaxo:hasGender acaxo_individuals:Female ;
+    acaxo:hasPoliticalLeaning acaxo_individuals:Liberal ;
+    acaxo:hasReligiousBelief acaxo_individuals:NotReligious .
+
+individuals:TXUser_26 a acaxo:TXUser ;
+    persp:holds acaxo_individuals:ProLife ;
+    acaxo:hasAge acaxo_individuals:AgeAbove60 ;
+    acaxo:hasEducation acaxo_individuals:HighschoolOrLower ;
+    acaxo:hasGender acaxo_individuals:Female ;
+    acaxo:hasPoliticalLeaning acaxo_individuals:Conservative ;
+    acaxo:hasReligiousBelief acaxo_individuals:Religious .
+
+individuals:TXUser_27 a acaxo:TXUser ;
+    persp:holds acaxo_individuals:ProChoice ;
+    acaxo:hasAge acaxo_individuals:AgeUnder20 ;
+    acaxo:hasEducation acaxo_individuals:CollegeOrHigher ;
+    acaxo:hasGender acaxo_individuals:Male ;
+    acaxo:hasPoliticalLeaning acaxo_individuals:Liberal ;
+    acaxo:hasReligiousBelief acaxo_individuals:Religious .
+
+individuals:TXUser_28 a acaxo:TXUser ;
+    persp:holds acaxo_individuals:ProLife ;
+    acaxo:hasAge acaxo_individuals:Age40To50 ;
+    acaxo:hasEducation acaxo_individuals:HighschoolOrLower ;
+    acaxo:hasGender acaxo_individuals:Male ;
+    acaxo:hasPoliticalLeaning acaxo_individuals:Conservative ;
+    acaxo:hasReligiousBelief acaxo_individuals:NotReligious .
+
+individuals:TXUser_29 a acaxo:TXUser ;
+    persp:holds acaxo_individuals:ProChoice ;
+    acaxo:hasAge acaxo_individuals:Age30To40 ;
+    acaxo:hasEducation acaxo_individuals:CollegeOrHigher ;
+    acaxo:hasGender acaxo_individuals:Female ;
+    acaxo:hasPoliticalLeaning acaxo_individuals:Liberal ;
+    acaxo:hasReligiousBelief acaxo_individuals:NotReligious .
+
+individuals:TXUser_3 a acaxo:TXUser ;
+    persp:holds acaxo_individuals:ProLife ;
+    acaxo:hasAge acaxo_individuals:Age20To30 ;
+    acaxo:hasEducation acaxo_individuals:HighschoolOrLower ;
+    acaxo:hasGender acaxo_individuals:Male ;
+    acaxo:hasPoliticalLeaning acaxo_individuals:Conservative ;
+    acaxo:hasReligiousBelief acaxo_individuals:Religious .
+
+individuals:TXUser_30 a acaxo:TXUser ;
+    persp:holds acaxo_individuals:ProLife ;
+    acaxo:hasAge acaxo_individuals:Age20To30 ;
+    acaxo:hasEducation acaxo_individuals:HighschoolOrLower ;
+    acaxo:hasGender acaxo_individuals:Female ;
+    acaxo:hasPoliticalLeaning acaxo_individuals:Conservative ;
+    acaxo:hasReligiousBelief acaxo_individuals:Religious .
+
+individuals:TXUser_31 a acaxo:TXUser ;
+    persp:holds acaxo_individuals:ProLife ;
+    acaxo:hasAge acaxo_individuals:Age50To60 ;
+    acaxo:hasEducation acaxo_individuals:HighschoolOrLower ;
+    acaxo:hasGender acaxo_individuals:Male ;
+    acaxo:hasPoliticalLeaning acaxo_individuals:Conservative ;
+    acaxo:hasReligiousBelief acaxo_individuals:Religious .
+
+individuals:TXUser_4 a acaxo:TXUser ;
+    persp:holds acaxo_individuals:ProChoice ;
+    acaxo:hasAge acaxo_individuals:Age30To40 ;
+    acaxo:hasEducation acaxo_individuals:CollegeOrHigher ;
+    acaxo:hasGender acaxo_individuals:Female ;
+    acaxo:hasPoliticalLeaning acaxo_individuals:Liberal ;
+    acaxo:hasReligiousBelief acaxo_individuals:NotReligious .
+
+individuals:TXUser_5 a acaxo:TXUser ;
+    persp:holds acaxo_individuals:ProLife ;
+    acaxo:hasAge acaxo_individuals:Age30To40 ;
+    acaxo:hasEducation acaxo_individuals:HighschoolOrLower ;
+    acaxo:hasGender acaxo_individuals:Female ;
+    acaxo:hasPoliticalLeaning acaxo_individuals:Conservative ;
+    acaxo:hasReligiousBelief acaxo_individuals:Religious .
+
+individuals:TXUser_6 a acaxo:TXUser ;
+    persp:holds acaxo_individuals:ProChoice ;
+    acaxo:hasAge acaxo_individuals:Age20To30 ;
+    acaxo:hasEducation acaxo_individuals:CollegeOrHigher ;
+    acaxo:hasGender acaxo_individuals:Male ;
+    acaxo:hasPoliticalLeaning acaxo_individuals:Liberal ;
+    acaxo:hasReligiousBelief acaxo_individuals:Religious .
+
+individuals:TXUser_7 a acaxo:TXUser ;
+    persp:holds acaxo_individuals:ProLife ;
+    acaxo:hasAge acaxo_individuals:Age50To60 ;
+    acaxo:hasEducation acaxo_individuals:HighschoolOrLower ;
+    acaxo:hasGender acaxo_individuals:Female ;
+    acaxo:hasPoliticalLeaning acaxo_individuals:Conservative ;
+    acaxo:hasReligiousBelief acaxo_individuals:Religious .
+
+individuals:TXUser_8 a acaxo:TXUser ;
+    persp:holds acaxo_individuals:ProChoice ;
+    acaxo:hasAge acaxo_individuals:Age20To30 ;
+    acaxo:hasEducation acaxo_individuals:CollegeOrHigher ;
+    acaxo:hasGender acaxo_individuals:Male ;
+    acaxo:hasPoliticalLeaning acaxo_individuals:Liberal ;
+    acaxo:hasReligiousBelief acaxo_individuals:NotReligious .
+
+individuals:TXUser_9 a acaxo:TXUser ;
+    persp:holds acaxo_individuals:ProLife ;
+    acaxo:hasAge acaxo_individuals:Age20To30 ;
+    acaxo:hasEducation acaxo_individuals:HighschoolOrLower ;
+    acaxo:hasGender acaxo_individuals:Female ;
+    acaxo:hasPoliticalLeaning acaxo_individuals:Conservative ;
+    acaxo:hasReligiousBelief acaxo_individuals:Religious .
+
+acaxo:AbortionAsMorallyWrong a owl:Class ;
+    rdfs:subClassOf persp:Cut .
+
+acaxo:Education a owl:Class ;
+    rdfs:subClassOf acaxo:TXUserInfo .
+
+acaxo:Gender a owl:Class ;
+    rdfs:subClassOf acaxo:TXUserInfo .
+
+acaxo:MorallyWrong a owl:Class ;
+    rdfs:subClassOf persp:Lens .
+
+acaxo:PoliticalLeaning a owl:Class ;
+    rdfs:subClassOf acaxo:TXUserInfo .
+
+acaxo:ReligiousBelief a owl:Class ;
+    rdfs:subClassOf acaxo:TXUserInfo .
+
+acaxo:TXAction a owl:Class ;
+    rdfs:subClassOf persp:Eventuality .
+
+acaxo_individuals:AbortionIsSinPerspective a acaxo:AbortionIsSin .
+
+acaxo_individuals:SinPerspective a acaxo:Sin .
+
+persp:Attitude a owl:Class .
+
+acaxo:AbortionForWomenEquality a owl:Class ;
+    rdfs:subClassOf persp:Cut .
+
+acaxo:AbortionIsAgainstLife a owl:Class ;
+    rdfs:subClassOf persp:Cut .
+
+acaxo:AgainstLife a owl:Class ;
+    rdfs:subClassOf persp:Lens .
+
+acaxo:WomenEquality a owl:Class ;
+    rdfs:subClassOf persp:Lens .
+
+acaxo_individuals:AbortionIsMorallyWrongPerspective a acaxo:AbortionAsMorallyWrong .
+
+acaxo_individuals:AbortionIsMurderPerspective a acaxo:AbortionIsMurder .
+
+acaxo_individuals:MorallyWrongPerspective a acaxo:MorallyWrong .
+
+acaxo_individuals:MurderPerspective a acaxo:Murder .
+
+persp:Lens a owl:Class .
+
+acaxo:TXUserInfo a owl:Class ;
+    rdfs:subClassOf persp:Background .
+
+acaxo_individuals:AbortionAsBodyChoicePerspective a acaxo:AbortionAsBodyChoice .
+
+acaxo_individuals:BodyChoicePerspective a acaxo:BodyChoice .
+
+acaxo_individuals:AbortionForWomenEqualityPerspective a acaxo:AbortionForWomenEquality .
+
+acaxo_individuals:AbortionIsAgainstLifePerspective a acaxo:AbortionIsAgainstLife .
+
+acaxo_individuals:AgainstLifePerspective a acaxo:AgainstLife .
+
+acaxo_individuals:WomenEqualityPerspective a acaxo:WomenEquality .
+
+acaxo_individuals:Male a acaxo:Gender .
+
+acaxo_individuals:NotReligious a acaxo:ReligiousBelief .
+
+acaxo_individuals:AbortionForHealthcarePerspective a acaxo:AbortionForHealthcare .
+
+acaxo_individuals:CollegeOrHigher a acaxo:Education .
+
+acaxo_individuals:Conservative a acaxo:PoliticalLeaning .
+
+acaxo_individuals:HealthcarePerspective a acaxo:Healthcare .
+
+acaxo_individuals:HighschoolOrLower a acaxo:Education .
+
+acaxo_individuals:Liberal a acaxo:PoliticalLeaning .
+
+acaxo_individuals:ProChoice a persp:Attitude .
+
+acaxo_individuals:ProLife a persp:Attitude .
+
+acaxo_individuals:Religious a acaxo:ReligiousBelief .
+
+acaxo_individuals:AbortionAsRightPerspective a acaxo:AbortionAsRight .
+
+acaxo_individuals:RightPerspective a acaxo:Right .
+
+acaxo_individuals:Female a acaxo:Gender .
+
+acaxo_individuals:ProtectTheUnbornPerspective a acaxo:ProtectTheUnborn .
+
+acaxo_individuals:TheUnbornPerspective a acaxo:TheUnborn .
+
+acaxo:TXHashtag a owl:Class ;
+    rdfs:subClassOf acaxo:TXAction .
+
+acaxo:TXPost a owl:Class ;
+    rdfs:subClassOf acaxo:TXAction .
+
+acaxo:TXUser a owl:Class ;
+    rdfs:subClassOf acaxo:Agent .
+

@@ -552,3 +552,4 @@ def create_graph(csv, endpoint, output_name, to_turtle=True, data_delimiter=",")
         with open(f"{output_name}.ttl", "w") as f:
             f.write(graph.serialize(format="turtle"))
 
+

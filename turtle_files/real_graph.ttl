@@ -1,0 +1,619 @@
+@prefix acaxo: <http://www.semanticweb.org/ACAXO#> .
+@prefix acaxo_individuals: <http://www.semanticweb.org/ACAXO/individuals#> .
+@prefix individuals: <https://github.com/ACAXOntology/> .
+@prefix mbe: <https://daselab.org/microblogentry#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix persp: <http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+persp:Agent a owl:Class .
+
+persp:holds a owl:ObjectProperty .
+
+persp:perspectivisedAs a owl:ObjectProperty .
+
+persp:perspectivisedThrough a owl:ObjectProperty .
+
+persp:shotThrough a owl:ObjectProperty .
+
+acaxo:Age a owl:Class ;
+    rdfs:subClassOf acaxo:TXUserInfo .
+
+acaxo:NewsEvent a owl:Class .
+
+acaxo:contains a owl:ObjectProperty .
+
+acaxo:hasAge a owl:ObjectProperty .
+
+acaxo:hasContent a owl:DatatypeProperty .
+
+acaxo:hasEducation a owl:ObjectProperty .
+
+acaxo:hasGender a owl:ObjectProperty .
+
+acaxo:hasPoliticalLeaning a owl:ObjectProperty .
+
+acaxo:hasReligiousBelief a owl:ObjectProperty .
+
+acaxo:isAboutNews a owl:DatatypeProperty .
+
+acaxo_individuals:AbortionForEconomicEqualityPerspective a acaxo:AbortionForEconomicEquality .
+
+acaxo_individuals:AbortionForWomenEqualityPerspective a acaxo:AbortionForWomenEquality .
+
+acaxo_individuals:CollegeOrHigher a acaxo:Education .
+
+acaxo_individuals:Conservative a acaxo:PoliticalLeaning .
+
+acaxo_individuals:EconomicEqualityPerspective a acaxo:EconomicEquality .
+
+acaxo_individuals:Female a acaxo:Gender .
+
+acaxo_individuals:HighschoolOrLower a acaxo:Education .
+
+acaxo_individuals:Liberal a acaxo:PoliticalLeaning .
+
+acaxo_individuals:Male a acaxo:Gender .
+
+acaxo_individuals:Neutral a persp:Attitude .
+
+acaxo_individuals:NotReligious a acaxo:ReligiousBelief .
+
+acaxo_individuals:ProtectTheUnbornPerspective a acaxo:ProtectTheUnborn .
+
+acaxo_individuals:Religious a acaxo:ReligiousBelief .
+
+acaxo_individuals:TheUnbornPerspective a acaxo:TheUnborn .
+
+acaxo_individuals:WomenEqualityPerspective a acaxo:WomenEquality .
+
+mbe:writtenBy a owl:ObjectProperty .
+
+individuals:TXPost_0 a acaxo:TXPost ;
+    persp:perspectivisedAs acaxo_individuals:AbortionIsAgainstLifePerspective ;
+    persp:shotThrough acaxo_individuals:AgainstLifePerspective ;
+    acaxo:contains individuals:TXHashtag_0 ;
+    acaxo:hasContent """Every human life is unrepeatable.
+
+That's what makes abortion wrong. #prolife #abortion""" ;
+    mbe:writtenBy individuals:TXUser_0 .
+
+individuals:TXPost_1 a acaxo:TXPost ;
+    persp:perspectivisedAs acaxo_individuals:AbortionAsBodyChoicePerspective ;
+    persp:shotThrough acaxo_individuals:BodyChoicePerspective ;
+    acaxo:contains individuals:TXHashtag_1 ;
+    acaxo:hasContent "The decision to overturn Roe V. Wade is devastating. #prochoice #mybodymychoice" ;
+    acaxo:isAboutNews "Roe v. Wade" ;
+    mbe:writtenBy individuals:TXUser_1 .
+
+individuals:TXPost_10 a acaxo:TXPost ;
+    persp:perspectivisedAs acaxo_individuals:AbortionAsBodyChoicePerspective ;
+    persp:shotThrough acaxo_individuals:BodyChoicePerspective ;
+    acaxo:contains individuals:TXHashtag_10 ;
+    acaxo:hasContent """Sitting here in Australia watching the news and I'm in tears and so angry at the disgusting decision to overturn #RoeVsWade. I'm appalled at the Men that stand outside abortion clinics, shouting obscenities at Women making a choice about their body.
+America is broken.
+#prochoice""" ;
+    acaxo:isAboutNews "Roe v. Wade" ;
+    mbe:writtenBy individuals:TXUser_10 .
+
+individuals:TXPost_11 a acaxo:TXPost ;
+    persp:perspectivisedAs acaxo_individuals:AbortionIsMurderPerspective ;
+    persp:shotThrough acaxo_individuals:MurderPerspective ;
+    acaxo:contains individuals:TXHashtag_11 ;
+    acaxo:hasContent "Abortion is murder #chooselife #prolife those who have kids supporting such heinous thing would you allow yourself(as a women) have one or lets see the men would they allow they're wife to have an abortion never I can guarantee it" ;
+    mbe:writtenBy individuals:TXUser_11 .
+
+individuals:TXPost_12 a acaxo:TXPost ;
+    persp:perspectivisedAs acaxo_individuals:AbortionAsRightPerspective,
+        acaxo_individuals:AbortionIsMurderPerspective ;
+    persp:shotThrough acaxo_individuals:MurderPerspective,
+        acaxo_individuals:RightPerspective ;
+    acaxo:contains individuals:TXHashtag_12 ;
+    acaxo:hasContent "Shame every pro choice person you see and call them “baby killers” #RoeVsWade #womansrightsarehumanrights #prochoice" ;
+    acaxo:isAboutNews "Roe v. Wade" ;
+    mbe:writtenBy individuals:TXUser_12 .
+
+individuals:TXPost_13 a acaxo:TXPost ;
+    persp:perspectivisedAs acaxo_individuals:AbortionAsBodyChoicePerspective ;
+    persp:shotThrough acaxo_individuals:BodyChoicePerspective ;
+    acaxo:contains individuals:TXHashtag_13 ;
+    acaxo:hasContent "Why do people care so much about what one person does with their body? Whether that’s transition, identify a certain way, love who they choose to, or have a medical procedure. That’s choice. This country is trying to force one way of thinking and living on us. #prochoice" ;
+    mbe:writtenBy individuals:TXUser_13 .
+
+individuals:TXPost_14 a acaxo:TXPost ;
+    persp:perspectivisedAs acaxo_individuals:AbortionAsBodyChoicePerspective ;
+    persp:shotThrough acaxo_individuals:BodyChoicePerspective ;
+    acaxo:contains individuals:TXHashtag_14 ;
+    acaxo:hasContent "I’m not pro abortion. I’m pro women. #prochoice" ;
+    mbe:writtenBy individuals:TXUser_14 .
+
+individuals:TXPost_15 a acaxo:TXPost ;
+    persp:perspectivisedAs acaxo_individuals:AbortionIsAgainstLifePerspective,
+        acaxo_individuals:AbortionIsMurderPerspective ;
+    persp:shotThrough acaxo_individuals:AgainstLifePerspective,
+        acaxo_individuals:MurderPerspective ;
+    acaxo:contains individuals:TXHashtag_15 ;
+    acaxo:hasContent "@MathisDoc @helicopterpage @Trump2094578522 @JustMe73forAll I too believe in right to life above all else. People with organ failure and cancer don't choose to die. We can't pick and choose who lives and dies, that's murder. The government should decide who should donate their blood and organs to save these lives. #ProLife #ProtectAllLife" ;
+    mbe:writtenBy individuals:TXUser_15 .
+
+individuals:TXPost_16 a acaxo:TXPost ;
+    persp:perspectivisedAs acaxo_individuals:AbortionAsRightPerspective,
+        acaxo_individuals:AbortionForHealthcarePerspective ;
+    persp:shotThrough acaxo_individuals:HealthcarePerspective,
+        acaxo_individuals:RightPerspective ;
+    acaxo:contains individuals:TXHashtag_16 ;
+    acaxo:hasContent """Abortion is a human right:) 
+Fuck off if you sincerely don't think so 
+#AbortionForHealthcare 
+#prochoice""" ;
+    mbe:writtenBy individuals:TXUser_16 .
+
+individuals:TXPost_17 a acaxo:TXPost ;
+    persp:perspectivisedAs acaxo_individuals:AbortionIsSinPerspective ;
+    persp:shotThrough acaxo_individuals:SinPerspective ;
+    acaxo:contains individuals:TXHashtag_17 ;
+    acaxo:hasContent """Absolutely!!
+
+The #Bible reminds us that life is sacred. As Christians, we are #prolife because life began as a gracious act of the Lord #God; let us remember the importance of holding this position. #roevwade #Jesus https://t.co/WF2ylTYN0h""" ;
+    acaxo:isAboutNews "Roe v. Wade" ;
+    mbe:writtenBy individuals:TXUser_17 .
+
+individuals:TXPost_18 a acaxo:TXPost ;
+    persp:perspectivisedAs acaxo_individuals:AbortionAsRightPerspective ;
+    persp:shotThrough acaxo_individuals:RightPerspective ;
+    acaxo:contains individuals:TXHashtag_18 ;
+    acaxo:hasContent """We believe no woman should be denied access to safe, legal abortion. We aren’t just fighting for our own rights, we’re fighting for everyone’s. It's the right thing to do. 
+#prochoice #HumanRights #WomensRightsAreHumanRights https://t.co/KDap5TwoT9""" ;
+    mbe:writtenBy individuals:TXUser_18 .
+
+individuals:TXPost_19 a acaxo:TXPost ;
+    persp:perspectivisedAs acaxo_individuals:AbortionIsMorallyWrongPerspective ;
+    persp:shotThrough acaxo_individuals:MorallyWrongPerspective ;
+    acaxo:contains individuals:TXHashtag_19 ;
+    acaxo:hasContent """@bennyjohnson #ProLife is not a religious stance. It’s a stance of basic human morality. 
+
+Prolife is a simple recognition that this is a precious human life. https://t.co/J6elBbJKjO""" ;
+    mbe:writtenBy individuals:TXUser_19 .
+
+individuals:TXPost_2 a acaxo:TXPost ;
+    persp:perspectivisedAs acaxo_individuals:AbortionIsMurderPerspective,
+        acaxo_individuals:AbortionIsSinPerspective ;
+    persp:shotThrough acaxo_individuals:MurderPerspective,
+        acaxo_individuals:SinPerspective ;
+    acaxo:contains individuals:TXHashtag_2 ;
+    acaxo:hasContent "Congratulations usa congratulations #prolife #USA abortion is a sin worse than death it’s a sin beyond killing a innocent unborn life. Today America won https://t.co/KHfCWUCyz4" ;
+    acaxo:isAboutNews "Roe v. Wade" ;
+    mbe:writtenBy individuals:TXUser_2 .
+
+individuals:TXPost_20 a acaxo:TXPost ;
+    persp:perspectivisedAs acaxo_individuals:AbortionAsRightPerspective ;
+    persp:shotThrough acaxo_individuals:RightPerspective ;
+    acaxo:contains individuals:TXHashtag_20 ;
+    acaxo:hasContent "I am generally scared to grow up in a world where my rights are slowly being striped away once agin going back in time is not an option #prochoice" ;
+    mbe:writtenBy individuals:TXUser_20 .
+
+individuals:TXPost_21 a acaxo:TXPost ;
+    persp:perspectivisedAs acaxo_individuals:AbortionAsBodyChoicePerspective,
+        acaxo_individuals:AbortionAsRightPerspective,
+        acaxo_individuals:AbortionForHealthcarePerspective ;
+    persp:shotThrough acaxo_individuals:BodyChoicePerspective,
+        acaxo_individuals:HealthcarePerspective,
+        acaxo_individuals:RightPerspective ;
+    acaxo:contains individuals:TXHashtag_21 ;
+    acaxo:hasContent "Let’s tell them : keep your laws out off my body #WomensRights #mybodymychoice #AbortionRightsAreHumanRights #AbortionForHealthcare #body #WomensRights #prochoice #ReproductiveRightsAreHumanRights #AbortionRightsAreHumanRights #DemVoice1 #USA https://t.co/NJgYcCOqvo… via @amazon" ;
+    mbe:writtenBy individuals:TXUser_21 .
+
+individuals:TXPost_22 a acaxo:TXPost ;
+    persp:perspectivisedAs acaxo_individuals:AbortionAsBodyChoicePerspective ;
+    persp:shotThrough acaxo_individuals:BodyChoicePerspective ;
+    acaxo:contains individuals:TXHashtag_22 ;
+    acaxo:hasContent "Today, I am grateful to have a uterus. It is my choice what I do with it, so I am grateful to have autonomy over my own body #RoeVWadeprotest #prochoice" ;
+    acaxo:isAboutNews "Roe v. Wade" ;
+    mbe:writtenBy individuals:TXUser_22 .
+
+individuals:TXPost_23 a acaxo:TXPost ;
+    persp:perspectivisedAs acaxo_individuals:AbortionAsBodyChoicePerspective ;
+    persp:shotThrough acaxo_individuals:BodyChoicePerspective ;
+    acaxo:contains individuals:TXHashtag_23 ;
+    acaxo:hasContent """Let me say this nice and loud for those in the back:
+
+IT IS NO ONE'S OBLIGATION TO GIVE LIFE.
+
+#RoeVWade #mybodymychoice #prochoice #ProLife https://t.co/41VRSYUPeH""" ;
+    acaxo:isAboutNews "Roe v. Wade" ;
+    mbe:writtenBy individuals:TXUser_23 .
+
+individuals:TXPost_3 a acaxo:TXPost ;
+    persp:perspectivisedAs acaxo_individuals:AbortionAsRightPerspective ;
+    persp:shotThrough acaxo_individuals:RightPerspective ;
+    acaxo:contains individuals:TXHashtag_3 ;
+    acaxo:hasContent "We are 1 step closer to a dark authoritarian state with lots of crazy people wielding assault weapons. I fear the future for all young women. #prochoice #WomensRights #GunControl" ;
+    mbe:writtenBy individuals:TXUser_3 .
+
+individuals:TXPost_4 a acaxo:TXPost ;
+    persp:perspectivisedAs acaxo_individuals:AbortionIsMurderPerspective ;
+    persp:shotThrough acaxo_individuals:MurderPerspective ;
+    acaxo:contains individuals:TXHashtag_4 ;
+    acaxo:hasContent "When women feel they must end the life of their child in order to succeed in life, that’s not freedom or choice. That’s a tragedy. Ending a life is never an adequate solution. #LoveThemBoth #RoeVWade #roeoverturned #ProLife #RoeVsWade" ;
+    acaxo:isAboutNews "Roe v. Wade" ;
+    mbe:writtenBy individuals:TXUser_4 .
+
+individuals:TXPost_5 a acaxo:TXPost ;
+    persp:perspectivisedAs acaxo_individuals:AbortionIsMurderPerspective ;
+    persp:shotThrough acaxo_individuals:MurderPerspective ;
+    acaxo:contains individuals:TXHashtag_5 ;
+    acaxo:hasContent """Hot take: We make our choice when we decide to have sex.
+
+So long as we're not forced to keep pregnancies resulting from incest or rape, then the overturning of #RoeVsWade is a good thing. Murder is not an acceptable form of birth control.
+
+#RoeVsWadeOverturned
+#RoeVWade
+#ProLife""" ;
+    acaxo:isAboutNews "Roe v. Wade" ;
+    mbe:writtenBy individuals:TXUser_5 .
+
+individuals:TXPost_6 a acaxo:TXPost ;
+    persp:perspectivisedAs acaxo_individuals:AbortionAsBodyChoicePerspective ;
+    persp:shotThrough acaxo_individuals:BodyChoicePerspective ;
+    acaxo:contains individuals:TXHashtag_6 ;
+    acaxo:hasContent "#prochoice If it's not your body, you don't have an opinion" ;
+    mbe:writtenBy individuals:TXUser_6 .
+
+individuals:TXPost_7 a acaxo:TXPost ;
+    persp:perspectivisedAs acaxo_individuals:AbortionAsBodyChoicePerspective ;
+    persp:shotThrough acaxo_individuals:BodyChoicePerspective ;
+    acaxo:contains individuals:TXHashtag_7 ;
+    acaxo:hasContent "Woman’s bodies their choice, Keep your opinions off our bodies, religion should NOT control this country. I can’t believe this actually has happened. #prochoice #mybodymychoice" ;
+    mbe:writtenBy individuals:TXUser_7 .
+
+individuals:TXPost_8 a acaxo:TXPost ;
+    persp:perspectivisedAs acaxo_individuals:AbortionIsMorallyWrongPerspective ;
+    persp:shotThrough acaxo_individuals:MorallyWrongPerspective ;
+    acaxo:contains individuals:TXHashtag_8 ;
+    acaxo:hasContent """You don’t have to be religious to think that chemically or physically entering a woman’s body to end the only natural way of creating human life is kind of f-cked up.
+
+#RoeVsWade 
+#Dobbs 
+#ProLife""" ;
+    acaxo:isAboutNews "Roe v. Wade" ;
+    mbe:writtenBy individuals:TXUser_8 .
+
+individuals:TXPost_9 a acaxo:TXPost ;
+    persp:perspectivisedAs acaxo_individuals:AbortionIsMurderPerspective ;
+    persp:shotThrough acaxo_individuals:MurderPerspective ;
+    acaxo:contains individuals:TXHashtag_9 ;
+    acaxo:hasContent """Best day in the USA
+60 million babies who were
+killed, this is your day! #RoeVsWade #PlannedParenthood #prolife #prochoice https://t.co/jVPTcWzxYi""" ;
+    acaxo:isAboutNews "Roe v. Wade" ;
+    mbe:writtenBy individuals:TXUser_9 .
+
+persp:Background a owl:Class .
+
+persp:Eventuality a owl:Class .
+
+acaxo:AbortionAsBodyChoice a owl:Class ;
+    rdfs:subClassOf persp:Cut .
+
+acaxo:AbortionAsRight a owl:Class ;
+    rdfs:subClassOf persp:Cut .
+
+acaxo:AbortionForEconomicEquality a owl:Class ;
+    rdfs:subClassOf acaxo:AbortionForWomenEquality .
+
+acaxo:AbortionForHealthcare a owl:Class ;
+    rdfs:subClassOf acaxo:AbortionForWomenEquality .
+
+acaxo:AbortionIsMurder a owl:Class ;
+    rdfs:subClassOf acaxo:AbortionIsAgainstLife .
+
+acaxo:AbortionIsSin a owl:Class ;
+    rdfs:subClassOf acaxo:AbortionAsMorallyWrong .
+
+acaxo:BodyChoice a owl:Class ;
+    rdfs:subClassOf persp:Lens .
+
+acaxo:EconomicEquality a owl:Class ;
+    rdfs:subClassOf acaxo:WomenEquality .
+
+acaxo:Healthcare a owl:Class ;
+    rdfs:subClassOf acaxo:WomenEquality .
+
+acaxo:Murder a owl:Class ;
+    rdfs:subClassOf acaxo:AgainstLife .
+
+acaxo:ProtectTheUnborn a owl:Class ;
+    rdfs:subClassOf acaxo:AbortionIsAgainstLife .
+
+acaxo:Right a owl:Class ;
+    rdfs:subClassOf persp:Lens .
+
+acaxo:Sin a owl:Class ;
+    rdfs:subClassOf acaxo:MorallyWrong .
+
+acaxo:TheUnborn a owl:Class ;
+    rdfs:subClassOf acaxo:AgainstLife .
+
+individuals:TXHashtag_0 a acaxo:TXHashtag ;
+    persp:perspectivisedAs acaxo_individuals:AbortionIsAgainstLifePerspective ;
+    persp:shotThrough acaxo_individuals:AgainstLifePerspective ;
+    acaxo:hasContent "#prolife #abortion" .
+
+individuals:TXHashtag_1 a acaxo:TXHashtag ;
+    persp:perspectivisedAs acaxo_individuals:AbortionAsBodyChoicePerspective ;
+    persp:shotThrough acaxo_individuals:BodyChoicePerspective ;
+    acaxo:hasContent "#prochoice #mybodymychoice" .
+
+individuals:TXHashtag_10 a acaxo:TXHashtag ;
+    persp:perspectivisedAs acaxo_individuals:AbortionAsBodyChoicePerspective ;
+    persp:shotThrough acaxo_individuals:BodyChoicePerspective ;
+    acaxo:hasContent "#prochoice" .
+
+individuals:TXHashtag_11 a acaxo:TXHashtag ;
+    persp:perspectivisedAs acaxo_individuals:AbortionIsMurderPerspective ;
+    persp:shotThrough acaxo_individuals:MurderPerspective ;
+    acaxo:hasContent "#chooselife #prolife" .
+
+individuals:TXHashtag_12 a acaxo:TXHashtag ;
+    persp:perspectivisedAs acaxo_individuals:AbortionAsRightPerspective,
+        acaxo_individuals:AbortionIsMurderPerspective ;
+    persp:shotThrough acaxo_individuals:MurderPerspective,
+        acaxo_individuals:RightPerspective ;
+    acaxo:hasContent "#RoeVsWade #womansrightsarehumanrights #prochoice" .
+
+individuals:TXHashtag_13 a acaxo:TXHashtag ;
+    persp:perspectivisedAs acaxo_individuals:AbortionAsBodyChoicePerspective ;
+    persp:shotThrough acaxo_individuals:BodyChoicePerspective ;
+    acaxo:hasContent "#prochoice" .
+
+individuals:TXHashtag_14 a acaxo:TXHashtag ;
+    persp:perspectivisedAs acaxo_individuals:AbortionAsBodyChoicePerspective ;
+    persp:shotThrough acaxo_individuals:BodyChoicePerspective ;
+    acaxo:hasContent "#prochoice" .
+
+individuals:TXHashtag_15 a acaxo:TXHashtag ;
+    persp:perspectivisedAs acaxo_individuals:AbortionIsAgainstLifePerspective,
+        acaxo_individuals:AbortionIsMurderPerspective ;
+    persp:shotThrough acaxo_individuals:AgainstLifePerspective,
+        acaxo_individuals:MurderPerspective ;
+    acaxo:hasContent "#ProLife #ProtectAllLife" .
+
+individuals:TXHashtag_16 a acaxo:TXHashtag ;
+    persp:perspectivisedAs acaxo_individuals:AbortionAsRightPerspective,
+        acaxo_individuals:AbortionForHealthcarePerspective ;
+    persp:shotThrough acaxo_individuals:HealthcarePerspective,
+        acaxo_individuals:RightPerspective ;
+    acaxo:hasContent "#AbortionForHealthcare #prochoice" .
+
+individuals:TXHashtag_17 a acaxo:TXHashtag ;
+    persp:perspectivisedAs acaxo_individuals:AbortionIsSinPerspective ;
+    persp:shotThrough acaxo_individuals:SinPerspective ;
+    acaxo:hasContent "#God #roevwade" .
+
+individuals:TXHashtag_18 a acaxo:TXHashtag ;
+    persp:perspectivisedAs acaxo_individuals:AbortionAsRightPerspective ;
+    persp:shotThrough acaxo_individuals:RightPerspective ;
+    acaxo:hasContent "#prochoice #HumanRights #WomensRightsAreHumanRights" .
+
+individuals:TXHashtag_19 a acaxo:TXHashtag ;
+    persp:perspectivisedAs acaxo_individuals:AbortionIsMorallyWrongPerspective ;
+    persp:shotThrough acaxo_individuals:MorallyWrongPerspective ;
+    acaxo:hasContent "#ProLife" .
+
+individuals:TXHashtag_2 a acaxo:TXHashtag ;
+    persp:perspectivisedAs acaxo_individuals:AbortionIsMurderPerspective,
+        acaxo_individuals:AbortionIsSinPerspective ;
+    persp:shotThrough acaxo_individuals:MurderPerspective,
+        acaxo_individuals:SinPerspective ;
+    acaxo:hasContent "#prolife #USA" .
+
+individuals:TXHashtag_20 a acaxo:TXHashtag ;
+    persp:perspectivisedAs acaxo_individuals:AbortionAsRightPerspective ;
+    persp:shotThrough acaxo_individuals:RightPerspective ;
+    acaxo:hasContent "#prochoice" .
+
+individuals:TXHashtag_21 a acaxo:TXHashtag ;
+    persp:perspectivisedAs acaxo_individuals:AbortionAsBodyChoicePerspective,
+        acaxo_individuals:AbortionAsRightPerspective,
+        acaxo_individuals:AbortionForHealthcarePerspective ;
+    persp:shotThrough acaxo_individuals:BodyChoicePerspective,
+        acaxo_individuals:HealthcarePerspective,
+        acaxo_individuals:RightPerspective ;
+    acaxo:hasContent "#WomensRights #mybodymychoice #AbortionRightsAreHumanRights #AbortionForHealthcare #body #WomensRights #prochoice #ReproductiveRightsAreHumanRights #AbortionRightsAreHumanRights #DemVoice1 #USA" .
+
+individuals:TXHashtag_22 a acaxo:TXHashtag ;
+    persp:perspectivisedAs acaxo_individuals:AbortionAsBodyChoicePerspective ;
+    persp:shotThrough acaxo_individuals:BodyChoicePerspective ;
+    acaxo:hasContent "#RoeVWadeprotest #prochoice" .
+
+individuals:TXHashtag_23 a acaxo:TXHashtag ;
+    persp:perspectivisedAs acaxo_individuals:AbortionAsBodyChoicePerspective ;
+    persp:shotThrough acaxo_individuals:BodyChoicePerspective ;
+    acaxo:hasContent "#RoeVWade #mybodymychoice #prochoice #ProLife" .
+
+individuals:TXHashtag_3 a acaxo:TXHashtag ;
+    persp:perspectivisedAs acaxo_individuals:AbortionAsRightPerspective ;
+    persp:shotThrough acaxo_individuals:RightPerspective ;
+    acaxo:hasContent "#GunControl" .
+
+individuals:TXHashtag_4 a acaxo:TXHashtag ;
+    persp:perspectivisedAs acaxo_individuals:AbortionIsMurderPerspective ;
+    persp:shotThrough acaxo_individuals:MurderPerspective ;
+    acaxo:hasContent "#LoveThemBoth #RoeVWade #roeoverturned #ProLife #RoeVsWade" .
+
+individuals:TXHashtag_5 a acaxo:TXHashtag ;
+    persp:perspectivisedAs acaxo_individuals:AbortionIsMurderPerspective ;
+    persp:shotThrough acaxo_individuals:MurderPerspective ;
+    acaxo:hasContent "#RoeVsWadeOverturned#RoeVWade#ProLife" .
+
+individuals:TXHashtag_6 a acaxo:TXHashtag ;
+    persp:perspectivisedAs acaxo_individuals:AbortionAsBodyChoicePerspective ;
+    persp:shotThrough acaxo_individuals:BodyChoicePerspective ;
+    acaxo:hasContent "#prochoice" .
+
+individuals:TXHashtag_7 a acaxo:TXHashtag ;
+    persp:perspectivisedAs acaxo_individuals:AbortionAsBodyChoicePerspective ;
+    persp:shotThrough acaxo_individuals:BodyChoicePerspective ;
+    acaxo:hasContent "#prochoice #mybodymychoice" .
+
+individuals:TXHashtag_8 a acaxo:TXHashtag ;
+    persp:perspectivisedAs acaxo_individuals:AbortionIsMorallyWrongPerspective ;
+    persp:shotThrough acaxo_individuals:MorallyWrongPerspective ;
+    acaxo:hasContent "#RoeVsWade #Dobbs #ProLife" .
+
+individuals:TXHashtag_9 a acaxo:TXHashtag ;
+    persp:perspectivisedAs acaxo_individuals:AbortionIsMurderPerspective ;
+    persp:shotThrough acaxo_individuals:MurderPerspective ;
+    acaxo:hasContent "#RoeVsWade #PlannedParenthood #prolife #prochoice" .
+
+individuals:TXUser_0 a acaxo:TXUser ;
+    persp:holds acaxo_individuals:ProLife .
+
+individuals:TXUser_1 a acaxo:TXUser ;
+    persp:holds acaxo_individuals:ProChoice .
+
+individuals:TXUser_10 a acaxo:TXUser ;
+    persp:holds acaxo_individuals:ProChoice .
+
+individuals:TXUser_11 a acaxo:TXUser ;
+    persp:holds acaxo_individuals:ProLife .
+
+individuals:TXUser_12 a acaxo:TXUser .
+
+individuals:TXUser_13 a acaxo:TXUser ;
+    persp:holds acaxo_individuals:ProChoice .
+
+individuals:TXUser_14 a acaxo:TXUser ;
+    persp:holds acaxo_individuals:ProChoice .
+
+individuals:TXUser_15 a acaxo:TXUser ;
+    persp:holds acaxo_individuals:ProLife .
+
+individuals:TXUser_16 a acaxo:TXUser ;
+    persp:holds acaxo_individuals:ProChoice .
+
+individuals:TXUser_17 a acaxo:TXUser ;
+    persp:holds acaxo_individuals:ProLife .
+
+individuals:TXUser_18 a acaxo:TXUser ;
+    persp:holds acaxo_individuals:ProChoice .
+
+individuals:TXUser_19 a acaxo:TXUser ;
+    persp:holds acaxo_individuals:ProLife .
+
+individuals:TXUser_2 a acaxo:TXUser ;
+    persp:holds acaxo_individuals:ProLife .
+
+individuals:TXUser_20 a acaxo:TXUser ;
+    persp:holds acaxo_individuals:ProChoice .
+
+individuals:TXUser_21 a acaxo:TXUser ;
+    persp:holds acaxo_individuals:ProChoice .
+
+individuals:TXUser_22 a acaxo:TXUser ;
+    persp:holds acaxo_individuals:ProChoice .
+
+individuals:TXUser_23 a acaxo:TXUser ;
+    persp:holds acaxo_individuals:ProChoice .
+
+individuals:TXUser_3 a acaxo:TXUser ;
+    persp:holds acaxo_individuals:ProChoice .
+
+individuals:TXUser_4 a acaxo:TXUser ;
+    persp:holds acaxo_individuals:ProLife .
+
+individuals:TXUser_5 a acaxo:TXUser ;
+    persp:holds acaxo_individuals:ProLife .
+
+individuals:TXUser_6 a acaxo:TXUser ;
+    persp:holds acaxo_individuals:ProChoice .
+
+individuals:TXUser_7 a acaxo:TXUser ;
+    persp:holds acaxo_individuals:ProChoice .
+
+individuals:TXUser_8 a acaxo:TXUser ;
+    persp:holds acaxo_individuals:ProLife .
+
+individuals:TXUser_9 a acaxo:TXUser .
+
+acaxo:AbortionAsMorallyWrong a owl:Class ;
+    rdfs:subClassOf persp:Cut .
+
+acaxo:Education a owl:Class ;
+    rdfs:subClassOf acaxo:TXUserInfo .
+
+acaxo:Gender a owl:Class ;
+    rdfs:subClassOf acaxo:TXUserInfo .
+
+acaxo:MorallyWrong a owl:Class ;
+    rdfs:subClassOf persp:Lens .
+
+acaxo:PoliticalLeaning a owl:Class ;
+    rdfs:subClassOf acaxo:TXUserInfo .
+
+acaxo:ReligiousBelief a owl:Class ;
+    rdfs:subClassOf acaxo:TXUserInfo .
+
+acaxo:TXAction a owl:Class ;
+    rdfs:subClassOf persp:Eventuality .
+
+persp:Attitude a owl:Class .
+
+acaxo:AbortionForWomenEquality a owl:Class ;
+    rdfs:subClassOf persp:Cut .
+
+acaxo:AbortionIsAgainstLife a owl:Class ;
+    rdfs:subClassOf persp:Cut .
+
+acaxo:AgainstLife a owl:Class ;
+    rdfs:subClassOf persp:Lens .
+
+acaxo:WomenEquality a owl:Class ;
+    rdfs:subClassOf persp:Lens .
+
+acaxo_individuals:AbortionForHealthcarePerspective a acaxo:AbortionForHealthcare .
+
+acaxo_individuals:AbortionIsAgainstLifePerspective a acaxo:AbortionIsAgainstLife .
+
+acaxo_individuals:AbortionIsMorallyWrongPerspective a acaxo:AbortionAsMorallyWrong .
+
+acaxo_individuals:AbortionIsSinPerspective a acaxo:AbortionIsSin .
+
+acaxo_individuals:AgainstLifePerspective a acaxo:AgainstLife .
+
+acaxo_individuals:HealthcarePerspective a acaxo:Healthcare .
+
+acaxo_individuals:MorallyWrongPerspective a acaxo:MorallyWrong .
+
+acaxo_individuals:SinPerspective a acaxo:Sin .
+
+persp:Lens a owl:Class .
+
+acaxo:TXUserInfo a owl:Class ;
+    rdfs:subClassOf persp:Background .
+
+acaxo_individuals:ProLife a persp:Attitude .
+
+acaxo_individuals:AbortionAsRightPerspective a acaxo:AbortionAsRight .
+
+acaxo_individuals:RightPerspective a acaxo:Right .
+
+acaxo_individuals:ProChoice a persp:Attitude .
+
+acaxo_individuals:AbortionIsMurderPerspective a acaxo:AbortionIsMurder .
+
+acaxo_individuals:MurderPerspective a acaxo:Murder .
+
+acaxo_individuals:AbortionAsBodyChoicePerspective a acaxo:AbortionAsBodyChoice .
+
+acaxo_individuals:BodyChoicePerspective a acaxo:BodyChoice .
+
+acaxo:TXHashtag a owl:Class ;
+    rdfs:subClassOf acaxo:TXAction .
+
+acaxo:TXPost a owl:Class ;
+    rdfs:subClassOf acaxo:TXAction .
+
+acaxo:TXUser a owl:Class ;
+    rdfs:subClassOf acaxo:Agent .
+
