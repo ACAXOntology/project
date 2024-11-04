@@ -107,9 +107,6 @@
         <Class IRI="#WomenEquality"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#cites"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#contains"/>
     </Declaration>
     <Declaration>
@@ -129,9 +126,6 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isCharacterizedBy"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#synthesizes"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="https://daselab.org/microblogentry#writtenBy"/>
@@ -404,13 +398,6 @@
     <SubClassOf>
         <Class IRI="#TXHashtag"/>
         <Class IRI="#TXAction"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#TXHashtag"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#synthesizes"/>
-            <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#TXPost"/>
