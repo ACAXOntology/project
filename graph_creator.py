@@ -1,4 +1,3 @@
-
 from rdflib import Graph, URIRef, Namespace, Literal, RDF, OWL, RDFS
 import pandas as pd
 import re
@@ -9,11 +8,9 @@ def create_graph(csv, endpoint, output_name, to_turtle=True, data_delimiter=",")
 
     data = pd.read_csv(csv, delimiter=data_delimiter)
     endpoint = endpoint + "sparql"
+
     # Graph
     graph = Graph()
-
-    # SPARQL endpoint
-    endpoint = "http://127.0.0.1:9999/blazegraph/sparql"
     # Namespaces
     acaxo = Namespace("http://www.semanticweb.org/ACAXO#")
     acaxo_individuals = Namespace("http://www.semanticweb.org/ACAXO/individuals#")
@@ -21,14 +18,15 @@ def create_graph(csv, endpoint, output_name, to_turtle=True, data_delimiter=",")
         "http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#"
     )
     individuals = Namespace("https://github.com/ACAXOntology/")
+    mbe = Namespace("https://daselab.org/microblogentry#")
 
     # Binding namespaces
     graph.bind("acaxo", acaxo)
     graph.bind("persp", persp)
     graph.bind("individuals", individuals)
     graph.bind("acaxo_individuals", acaxo_individuals)
+    graph.bind("mbe", mbe)
 
-    
     graph.remove((None, None, None))
 
     # NewsEvent
@@ -214,13 +212,12 @@ def create_graph(csv, endpoint, output_name, to_turtle=True, data_delimiter=",")
     contains = URIRef(acaxo.contains)
     graph.add((contains, RDF.type, OWL.ObjectProperty))
 
-    creates = URIRef(acaxo.creates)
-    graph.add((creates, RDF.type, OWL.ObjectProperty))
+    writtenBy = URIRef(mbe.writtenBy)
+    graph.add((writtenBy, RDF.type, OWL.ObjectProperty))
 
     hasContent = URIRef(acaxo.hasContent)
     graph.add((hasContent, RDF.type, OWL.DatatypeProperty))
 
-    
     ontology_individuals = {
         # Lens
         "SinPerspective": URIRef(acaxo_individuals.SinPerspective),
@@ -408,7 +405,6 @@ def create_graph(csv, endpoint, output_name, to_turtle=True, data_delimiter=",")
     graph.add((ontology_individuals["Religious"], RDF.type, ReligiousBelief))
     graph.add((ontology_individuals["NotReligious"], RDF.type, ReligiousBelief))
 
-    
     # instantiate posts
     post_instances = {
         row["id"]: URIRef(individuals + "TXPost_" + str(row["id"]))
@@ -455,7 +451,6 @@ def create_graph(csv, endpoint, output_name, to_turtle=True, data_delimiter=",")
             else:
                 print(f"Warning: '{cut}' not found in ontology_individuals")
 
-    
     # instantiate hashtag
     hashtag_instances = {
         row["id"]: URIRef(individuals + "TXHashtag_" + str(row["id"]))
@@ -465,7 +460,6 @@ def create_graph(csv, endpoint, output_name, to_turtle=True, data_delimiter=",")
     for _, value in hashtag_instances.items():
         graph.add((value, RDF.type, TXHashtag))
 
-    
     # connecting posts with hashtags
     for key, value in post_instances.items():
         graph.add((value, contains, hashtag_instances[key]))
@@ -495,7 +489,6 @@ def create_graph(csv, endpoint, output_name, to_turtle=True, data_delimiter=",")
             else:
                 print(f"Warning: '{cut}' not found in ontology_individuals")
 
-    
     # instantiate users
     user_instances = {
         row["id"]: URIRef(individuals + "TXUser_" + str(row["id"]))
@@ -506,9 +499,8 @@ def create_graph(csv, endpoint, output_name, to_turtle=True, data_delimiter=",")
 
     # connecting posts with users
     for key, value in post_instances.items():
-        graph.add((user_instances[key], creates, value))
+        graph.add((value, writtenBy, user_instances[key]))
 
-    
     def to_camel_case(text):
         removed = text.replace('-', ' ').replace('_', ' ').split()
         if len(removed) == 0:
@@ -540,11 +532,11 @@ def create_graph(csv, endpoint, output_name, to_turtle=True, data_delimiter=",")
             graph.add(
                 (user_uri, hasReligiousBelief, ontology_individuals[religious_belief])
             )
-    
+
     # OPTIONAL: add perspectivazation graph
     # creates problems with SPARQL!!!
-    #persp_graph = Graph()
-    #persp_graph.parse("perspectivazation.ttl", format="turtle")
+    # persp_graph = Graph()
+    # persp_graph.parse("perspectivazation.ttl", format="turtle")
     # graph += persp_graph
 
     store = SPARQLUpdateStore()
