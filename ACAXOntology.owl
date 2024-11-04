@@ -16,16 +16,16 @@
     <Prefix name="schema" IRI="https://w3id.org/framester/schema/"/>
     <Import>http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl</Import>
     <Declaration>
-        <Class IRI="#AbortionAgainstLife"/>
+        <Class IRI="#AbortionForEconomicEquality"/>
     </Declaration>
     <Declaration>
         <Class IRI="#AbortionForWomenEquality"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#AbortionIsBodyChoice"/>
+        <Class IRI="#AbortionIsAgainstLife"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#AbortionIsEconomicEquality"/>
+        <Class IRI="#AbortionIsBodyChoice"/>
     </Declaration>
     <Declaration>
         <Class IRI="#AbortionIsHealthcare"/>
@@ -46,13 +46,10 @@
         <Class IRI="#AgainstLife"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Age"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#BodyChoice"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#CollegeOrHigher"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Conservative"/>
     </Declaration>
     <Declaration>
         <Class IRI="#EconomicEquality"/>
@@ -61,22 +58,10 @@
         <Class IRI="#Education"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Female"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Gender"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Healthcare"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#HighschoolOrLower"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Liberal"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Male"/>
     </Declaration>
     <Declaration>
         <Class IRI="#MorallyWrong"/>
@@ -85,16 +70,10 @@
         <Class IRI="#Murder"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#NonReligious"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#PoliticalLeaning"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ProtectTheUnborn"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Religious"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ReligiousBelief"/>
@@ -133,6 +112,9 @@
         <ObjectProperty IRI="#contains"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasAge"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasEducation"/>
     </Declaration>
     <Declaration>
@@ -151,31 +133,25 @@
         <ObjectProperty IRI="#synthesizes"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#writtenBy"/>
+        <ObjectProperty IRI="https://daselab.org/microblogentry#writtenBy"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasContent"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasNewsDescription"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#hasNewsEvent"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasText"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#AbortionAgainstLifePerspective"/>
+        <NamedIndividual IRI="#AbortionForEconomicEqualityPerspective"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#AbortionForWomenEqualityPerspective"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#AbortionIsBodyChoicePerspective"/>
+        <NamedIndividual IRI="#AbortionIsAgainstLifePerspective"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#AbortionIsEconomicEqualityPerspective"/>
+        <NamedIndividual IRI="#AbortionIsBodyChoicePerspective"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#AbortionIsHealthcarePerspective"/>
@@ -194,6 +170,24 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#AgainstLifePerspective"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Age20To30"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Age30To40"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Age40To50"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Age50To60"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AgeAbove60"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AgeUnder20"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#BodyChoicePerspective"/>
@@ -269,8 +263,15 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#AbortionAgainstLife"/>
-        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut"/>
+        <Class IRI="#AbortionForEconomicEquality"/>
+        <Class IRI="#AbortionForWomenEquality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AbortionForEconomicEquality"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#shotThrough"/>
+            <Class IRI="#EconomicEquality"/>
+        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#AbortionForWomenEquality"/>
@@ -284,6 +285,10 @@
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#AbortionIsAgainstLife"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#AbortionIsBodyChoice"/>
         <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Cut"/>
     </SubClassOf>
@@ -292,17 +297,6 @@
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#shotThrough"/>
             <Class IRI="#BodyChoice"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#AbortionIsEconomicEquality"/>
-        <Class IRI="#AbortionForWomenEquality"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#AbortionIsEconomicEquality"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#shotThrough"/>
-            <Class IRI="#EconomicEquality"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -322,7 +316,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#AbortionIsMurder"/>
-        <Class IRI="#AbortionAgainstLife"/>
+        <Class IRI="#AbortionIsAgainstLife"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#AbortionIsMurder"/>
@@ -351,16 +345,12 @@
         <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Age"/>
+        <Class IRI="#TXUserInfo"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#BodyChoice"/>
         <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#CollegeOrHigher"/>
-        <Class IRI="#Education"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Conservative"/>
-        <Class IRI="#PoliticalLeaning"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#EconomicEquality"/>
@@ -371,28 +361,12 @@
         <Class IRI="#TXUserInfo"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Female"/>
-        <Class IRI="#Gender"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Gender"/>
         <Class IRI="#TXUserInfo"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Healthcare"/>
         <Class IRI="#WomenEquality"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#HighschoolOrLower"/>
-        <Class IRI="#Education"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Liberal"/>
-        <Class IRI="#PoliticalLeaning"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Male"/>
-        <Class IRI="#Gender"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MorallyWrong"/>
@@ -403,20 +377,12 @@
         <Class IRI="#AgainstLife"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#NonReligious"/>
-        <Class IRI="#ReligiousBelief"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#PoliticalLeaning"/>
         <Class IRI="#TXUserInfo"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ProtectTheUnborn"/>
-        <Class IRI="#AbortionAgainstLife"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Religious"/>
-        <Class IRI="#ReligiousBelief"/>
+        <Class IRI="#AbortionIsAgainstLife"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ReligiousBelief"/>
@@ -433,13 +399,6 @@
     <SubClassOf>
         <Class IRI="#TXAction"/>
         <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Eventuality"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#TXAction"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="#writtenBy"/>
-            <Class IRI="#TXUser"/>
-        </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#TXHashtag"/>
@@ -487,20 +446,20 @@
         <Class IRI="http://www.ontologydesignpatterns.org/ont/persp/perspectivisation.owl#Lens"/>
     </SubClassOf>
     <ClassAssertion>
-        <Class IRI="#AbortionAgainstLife"/>
-        <NamedIndividual IRI="#AbortionAgainstLifePerspective"/>
+        <Class IRI="#AbortionForEconomicEquality"/>
+        <NamedIndividual IRI="#AbortionForEconomicEqualityPerspective"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#AbortionForWomenEquality"/>
         <NamedIndividual IRI="#AbortionForWomenEqualityPerspective"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#AbortionIsBodyChoice"/>
-        <NamedIndividual IRI="#AbortionIsBodyChoicePerspective"/>
+        <Class IRI="#AbortionIsAgainstLife"/>
+        <NamedIndividual IRI="#AbortionIsAgainstLifePerspective"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#AbortionIsEconomicEquality"/>
-        <NamedIndividual IRI="#AbortionIsEconomicEqualityPerspective"/>
+        <Class IRI="#AbortionIsBodyChoice"/>
+        <NamedIndividual IRI="#AbortionIsBodyChoicePerspective"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#AbortionIsHealthcare"/>
@@ -525,6 +484,30 @@
     <ClassAssertion>
         <Class IRI="#AgainstLife"/>
         <NamedIndividual IRI="#AgainstLifePerspective"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Age"/>
+        <NamedIndividual IRI="#Age20To30"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Age"/>
+        <NamedIndividual IRI="#Age30To40"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Age"/>
+        <NamedIndividual IRI="#Age40To50"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Age"/>
+        <NamedIndividual IRI="#Age50To60"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Age"/>
+        <NamedIndividual IRI="#AgeAbove60"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Age"/>
+        <NamedIndividual IRI="#AgeUnder20"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#BodyChoice"/>
@@ -591,7 +574,7 @@
         <NamedIndividual IRI="#ProtectTheUnbornPerspective"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Religious"/>
+        <Class IRI="#ReligiousBelief"/>
         <NamedIndividual IRI="#Religious"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -610,6 +593,14 @@
         <Class IRI="#WomenEquality"/>
         <NamedIndividual IRI="#WomenEqualityPerspective"/>
     </ClassAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#contains"/>
+        <Class IRI="#TXPost"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAge"/>
+        <Class IRI="#TXUser"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasEducation"/>
         <Class IRI="#TXUser"/>
@@ -631,9 +622,17 @@
         <Class IRI="#TXUser"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#writtenBy"/>
+        <ObjectProperty IRI="https://daselab.org/microblogentry#writtenBy"/>
         <Class IRI="#TXAction"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#contains"/>
+        <Class IRI="#TXHashtag"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAge"/>
+        <Class IRI="#Age"/>
+    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasEducation"/>
         <Class IRI="#Education"/>
@@ -655,7 +654,7 @@
         <Class IRI="#TXUserInfo"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#writtenBy"/>
+        <ObjectProperty IRI="https://daselab.org/microblogentry#writtenBy"/>
         <Class IRI="#TXUser"/>
     </ObjectPropertyRange>
     <SubDataPropertyOf>
@@ -674,64 +673,213 @@
         <DataProperty IRI="#hasNewsEvent"/>
         <Class IRI="#TXPost"/>
     </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#hasText"/>
-        <Class IRI="#TXHashtag"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#hasText"/>
-        <Class IRI="#TXPost"/>
-    </DataPropertyDomain>
     <DataPropertyRange>
         <DataProperty IRI="#hasContent"/>
-        <Datatype abbreviatedIRI="rdfs:Literal"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#hasNewsDescription"/>
         <Datatype abbreviatedIRI="rdfs:Literal"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#hasNewsEvent"/>
         <Datatype abbreviatedIRI="rdfs:Literal"/>
     </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#hasText"/>
-        <Datatype abbreviatedIRI="rdfs:Literal"/>
-    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AbortionForEconomicEquality</IRI>
+        <Literal>abortion is seen as a practice tied with financial equality (and freedom) and possibly influencing economic freedom of women.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AbortionForWomenEquality</IRI>
+        <Literal>abortion is seen as a practice strictly tied with gender equality; as such, advocating its acceptance corresponds to advocating for said equality in various aspects.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AbortionIsAgainstLife</IRI>
+        <Literal>abortion as a practice is conceptualized as a limitation to the right of the fetus&apos; right to life and in general as a menace to the inviolability of life.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AbortionIsBodyChoice</IRI>
+        <Literal>this conceptualization tackles a problem partially detached from morality of the action, as it considers abortion completely dependent on the needs and will of the individual, based on them being the most affected.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AbortionIsHealthcare</IRI>
+        <Literal>abortion practices are seen a reproductive right and strictly tied with women healthcare, therefore advocating for it corresponds to advocating for gender equality  in medical matters.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AbortionIsMorallyWrong</IRI>
+        <Literal>abortion is seen as wrong for reasons that may or may not be related to a religious world view. This class may be useful to describe situation in which the supposed immorality of abortion is not furtherly explained.</Literal>
+    </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#AbortionIsMurder</IRI>
-        <Literal>A class representing a pro-life stance, supporting the banning of abortion within the rhetoric of it being a form of murder.</Literal>
+        <Literal>abortion is seen as a form of literal violence against the fetus, and is framed as a murder on a moral (and possibly legal) standpoint.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AbortionIsRight</IRI>
+        <Literal>abortion is seen as a right that has to be protected and granted by institutions. This view is informed by an individualistic concept of right.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AbortionIsSin</IRI>
+        <Literal>abortion is seen as wrong for religious reasons, specifically in cases in which the conceptualizer is Christian.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AgainstLife</IRI>
+        <Literal>The concept of something that actively opposed, endangers and doesn&apos;t observe the right to life.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Age</IRI>
+        <Literal>The most probable age span of the user.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BodyChoice</IRI>
+        <Literal>The concept of a decision made by one affecting mainly or solely its own body.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EconomicEquality</IRI>
+        <Literal>The concept of gender equality specifically applied to retribution, administration of  money and other economic matters.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Education</IRI>
+        <Literal>The most probable education level of the user (graduation from college being the divider between the two considered values).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Gender</IRI>
-        <Literal>possible values: male / female / other</Literal>
+        <Literal>The most probable gender of the user (only male or female are considered, not with the intention of discriminating those not adhering to binary conceptions of gender, but to consider the most occurring cases in the current scenario - addition of other genders is recommended if needed).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Healthcare</IRI>
+        <Literal>The concept of the sum of practices, services and institutions providing physical and mental wellbeing of a person.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MorallyWrong</IRI>
+        <Literal>The concept of an action that doesn&apos;t observe moral obbligations and/or disturbs one&apos;s moral conscience - with or without religious connotations.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Murder</IRI>
+        <Literal>The concept of an act of violence directed to ending someone&apos;s life. Subclass of MorallyWrong.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Neutral</IRI>
+        <Literal>The attitude of someone who doesn&apos;t express a clear or strong stance on topic of abortions.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#PoliticalLeaning</IRI>
-        <Literal>possible values: liberal / conservative / other</Literal>
+        <Literal>The most probable political ideology the user holds between liberal or conservative.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ProChoice</IRI>
+        <Literal>The attitude of someone advocating for legalization and general acceptance of abortion and medical practices tied to it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ProLife</IRI>
+        <Literal>The attitude of someone opposing the legalization of abortion and medical practices tied to it, considering it unacceptable on different standpoint (commonly, ethical).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ProtectTheUnborn</IRI>
+        <Literal>abortion discussion focuses on the fetus itself more than on the practice, and display of empathy towards it / concern for its safety could be present.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#ReligiousBelief</IRI>
-        <Literal>Possible values: religious / non-religious</Literal>
+        <Literal>The likelyhood that a user holds religious believes or not.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Right</IRI>
+        <Literal>The concept of legal right.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Sin</IRI>
+        <Literal>The concept of religious sin, specifically that of Christianity.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#TXAction</IRI>
-        <Literal>Some content (or part of it) produced by a Twitter-X user</Literal>
+        <Literal>The group of actions a user can perform on the social media platform Twitter-X that results in content visible to other users</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TXHashtag</IRI>
+        <Literal>The group of hashtags contained in a Twitter-X post.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TXPost</IRI>
+        <Literal>The sum of the content (text, hashtags, tags, images, etc) that compose a post on the platform Twitter-X.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#TXUser</IRI>
-        <Literal>A person who at some point in time had a valid Twitter-X account</Literal>
+        <Literal>A person with has had at some point a valid Twitter-X account</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#TXUserInfo</IRI>
-        <Literal>Parameters which can be extracted from users&apos; textual content regarding their positionality</Literal>
+        <Literal>The sum of personal information extracted about a user. In this sense, a profile partially denoting a user &quot;positionality&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TheUnborn</IRI>
+        <Literal>An individual recognized as &quot;alive&quot;, even before birth - as such, it&apos;s implied a conceptualization of life beginning at birth. Subclass of MorallyWrong.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#WomenEquality</IRI>
+        <Literal>The concept of gender equality, both from a social and legal standpoint, on all aspects of one&apos;s life.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#contains</IRI>
+        <Literal>It connects a post to the group of hashtags it contains - it expresses a relation of meronymy between the two.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasAge</IRI>
+        <Literal>Connects a user to its most probable age span.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasContent</IRI>
+        <Literal>The domain of this property has some textual content, expressed by the range.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasGender</IRI>
+        <Literal>Connects a user to its most probable gender (see Gender class).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasNewsEvent</IRI>
+        <Literal>It expresses the connection between a post and a literal describing a news event the post references.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasPoliticalLeaning</IRI>
+        <Literal>Connects a user to its most probable political ideology stance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasReligiousBelief</IRI>
+        <Literal>Connects a user to its most probable religious stance.</Literal>
     </AnnotationAssertion>
 </Ontology>
 
